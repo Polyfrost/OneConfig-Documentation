@@ -13,10 +13,12 @@
 
 * [Creating a Config](config/creating-a-config.md)
 * [Adding options](config/adding-options/README.md)
-  * [Boolean config components](config/adding-options/boolean-config-components.md)
-  * [Number config components](config/adding-options/number-config-components.md)
-  * [Multi config components](config/adding-options/multi-config-components.md)
-  * [Decorative config components](config/adding-options/decorative-config-components.md)
+  * [Boolean Configs](config/adding-options/boolean-config-components.md)
+  * [Number Configs](config/adding-options/number-config-components.md)
+  * [Selector Configs](config/adding-options/multi-config-components.md)
+  * [Text Configs](config/adding-options/text-configs.md)
+  * [Buttons, Colors and Keybinds](config/adding-options/buttons-colors-and-keybinds.md)
+  * [Decorative Components](config/adding-options/decorative-config-components.md)
 * [Compatibility](config/compatibility/README.md)
   * [Vigilance Compatibility (VCAL)](config/compatibility/vigilance-compatibility-vcal.md)
 

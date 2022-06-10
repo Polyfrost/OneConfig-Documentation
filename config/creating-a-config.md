@@ -31,9 +31,7 @@ public MyConfig() {
 }
 ```
 
-
-
-Finally, you have to initialize your config when the game launches, Which can easily be done using OneConfig's [Broken link](broken-reference "mention") system and `InitializationEvent`, most commonly in your main class:
+Finally, you have to initialize your config when the game launches, Which can easily be done using [Broken link](broken-reference "mention") system and `InitializationEvent`, most commonly in your main class:
 
 ```java
 public class MyMod {
@@ -47,3 +45,11 @@ public class MyMod {
 ```
 
 That's it! Simple right? Your config is now registered in OneConfig, can be seen in the GUI, so now it's time to start adding options!
+
+
+
+## Example Config GUI
+
+Here is an example config GUI, if you are looking for a sneak peek or some inspiration :)
+
+![Example Config GUI for inspiration](<../.gitbook/assets/image (6).png>)

@@ -1,50 +1,52 @@
 ---
-description: Learn about all boolean components.
+description: Learn all about boolean components.
 ---
 
-# Boolean config components
+# Boolean Configs
 
 ## Switch
 
-The switch is a basic boolean, well switch! It has a single and dual column variant.
+The switch is a basic boolean, well switch! It has a single and dual column variant. The switch is probably the most common component we offer.
 
 ```java
 @Switch(
-    name = "Test Switch",
+    name = "Toggle Switch (1x)",
     size = OptionSize.SINGLE // optional
 )
-public static boolean enabled = false;
+public static boolean bob = false;        // default value
 ```
 
-This code will create a switch like this (true and false states side by side)
+This code will create a switch like this:
 
-![Switch with true and false state](<../../.gitbook/assets/image (7).png>)
+![Toggle Switch example (off and on states)](<../../.gitbook/assets/image (17).png>)
 
 ## Checkbox
 
-A basic checkbox. It also has a single and dual column variant:
+A basic checkbox for checking of things. It also has a single and dual column variant:
 
 ```java
 @Checkbox(
-    name = "I'm a checkbox!",
-    size = OptionSize.DUAL
+    name = "Im a checkbox!",
+    size = OptionSize.DUAL // optional
 )
-public static boolean something = false;
+public static boolean something = false;        // default value
 ```
+
+![Checkbox examples (off and on states)](<../../.gitbook/assets/image (4).png>)
 
 ## Dual Option
 
-The dual option requires you to give 2 options in the option array.\
-It has a 1x and 2x varient
+The dual option is a simple config component that allows for more clarity, for example in a boolean that determines weather to display something on the Left, or on the Right. It has nice animations.
+
+As always, it has a single and dual column variant.
 
 ```java
-@Option(
-    name = "Dual Option",
-    type = OptionType.DUAL_OPTION,
-    options = {"LEFT", "RIGHT"},
-    size = 1, // optional
-    category = "General", // optional
-    subcategory = "Example" // optional
+@DualOption(
+    name = "I can slide!", // name of the element
+    left = "I'm Left",     // string to display on the left
+    right = "No, right!"   // string to display on the right
 )
-public static boolean enabled = false;
+public static boolean leftyrighty = false;        // default value
 ```
+
+![](<../../.gitbook/assets/image (7).png>)

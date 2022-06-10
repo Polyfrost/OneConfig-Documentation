@@ -29,3 +29,7 @@ Remember all `@Subscribe` event methods must not be static!
 {% content-ref url="hudrenderevent.md" %}
 [hudrenderevent.md](hudrenderevent.md)
 {% endcontent-ref %}
+
+{% content-ref url="locrawevent.md" %}
+[locrawevent.md](locrawevent.md)
+{% endcontent-ref %}
