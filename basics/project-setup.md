@@ -14,7 +14,7 @@ Firstly, hit **Ctrl+Alt+S** to open Settings, and select on the side: **Build, E
 
 ![Gradle JVM settings](../.gitbook/assets/image.png)
 
-Now, click **Download JDK** and set the **Version to 16 or 17** on the popup that appears. Don't change anything else, just hit **Download**. Once that has finished, set that new JVM as the **Gradle JVM** and click **Apply** to set the changes.
+Now, click **Download JDK** and set the Version to **17 or above** on the popup that appears. Don't change anything else, just hit **Download**. Once that has finished, set that new JVM as the **Gradle JVM** and click **Apply** to set the changes.
 
 ### _2. Project JDK_
 

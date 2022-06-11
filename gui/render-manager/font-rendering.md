@@ -20,6 +20,7 @@ RenderManager.setupAndDraw((vg) -> {
     // draw some wrapped text at x=10 y=50 in white (-1), at 12px in Inter Regular
     // which wraps onto the next line if the line is more than 100px long
     RenderManager.drawWrappedText(vg, "Never gonna give you up; never gonna let you down", 10, 50, 100, -1, 12f, Fonts.REGULAR);
+}
 ```
 
 You can even use your own font by creating a custom `Font` object:
@@ -33,4 +34,3 @@ public void draw(long vg, int x, int y) {
     RenderManager.drawText(vg, "Hi!", 10, 50, -1, 12f, inter);
 }
 ```
-

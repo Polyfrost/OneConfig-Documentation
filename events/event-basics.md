@@ -4,11 +4,9 @@ description: Learn more about Events, how they work and their purpose
 
 # Event Basics
 
-If you are familiar with Java libraries like `javax.swing`, or have done Forge/Fabric coding before, then don't worry - events shouldn't be a mystery to you!&#x20;
+If you are familiar with Java libraries like `javax.swing`, or have done Forge/Fabric coding before, then don't worry - events shouldn't be a mystery to you!
 
 Forge and Fabric already use events, however they are not very multiplatform - they change massively version to version. That's why OneConfig has its own event system, helping OneConfig to achieve its aim of uniting all Minecraft mods.
-
-
 
 ## Getting on the Bus
 
@@ -16,7 +14,7 @@ To get events to work, its important to register any Object/Class that uses them
 
 ```java
 public MyClassConstructor() {
-    EventManager.getEventManager().register(this);
+    EventManager.INSTANCE.register(this);
 }
 ```
 
@@ -28,7 +26,7 @@ Once you have registered your class, you can now `@Subscribe` to (use) the event
 
 ```java
 @Subscribe
-private void onTick(TickEvent bob) { // the parameter type specifies what event you are subscribing to
+private void onTick(TickEvent event) { // the parameter type specifies what event you are subscribing to
     // do something every tick (once every 50ms in Minecraft)
 }
 ```

@@ -7,7 +7,7 @@ description: How to include OneConfig in your project
 If you haven't used our Mod template, are switching to OneConfig, or you just want to include OneConfig into your mod, add this to your build.gradle(.kts):
 
 {% hint style="warning" %}
-OneConfig utilizes features that require a Java 16 Gradle VM alongside the Java 8 VM for your mod. If you are unsure about how to set these individually, check out [project-setup.md](basics/project-setup.md "mention") for more information on it (you can just select your VM if you already have one instead of downloading)
+OneConfig utilizes features that require a Java 17+ Gradle VM alongside the Java 8 VM for your mod. If you are unsure about how to set these individually, check out [project-setup.md](basics/project-setup.md "mention") for more information on it (you can just select your VM if you already have one instead of downloading)
 {% endhint %}
 
 {% tabs %}

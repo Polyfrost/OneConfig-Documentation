@@ -10,7 +10,7 @@ NanoVG allows for beautiful, sharp UIs at fast speeds due to its lightweight des
 
 ## Getting Started
 
-To use NanoVG, it requires a **context**. This can be created easily using a handy lambda style method:
+To draw things using NanoVG, use the `setupAndDraw` method.
 
 ```java
 RenderManager.setupAndDraw((vg) -> {
@@ -19,11 +19,15 @@ RenderManager.setupAndDraw((vg) -> {
 }
 ```
 
-Once you have a context, you can draw whatever you want! Make sure to check out the Dokka Javadocs for more information on available methods in RenderManager.
+If Kotlin is being used, the alternative `nanoVG` method can be used. This automatically passes the NanoVG context that is required in Java.
 
-{% hint style="info" %}
-A lot of OneConfig's public methods include `vg` as a parameter. This means you don't have to do setupAndDraw, and you can just use the `vg` context as a variable!
-{% endhint %}
+```kotlin
+nanoVG {
+    drawRoundedRect(10, 50, 100, 100, -1, 12f)
+}
+```
+
+Make sure to check out the Dokka Javadocs for more information on available methods in RenderManager and RenderManagerDSL.
 
 ## When do I draw?
 
@@ -43,7 +47,7 @@ These images use accurate scaling methods and antialiasing so you can draw them 
 
 `RenderManager.drawImage(vg, "https://i.dailymail.co.uk/1s/2021/07/29/20/46061771-0-image-a-349_1627585586527.jpg", 10, 50, 100, 200);`
 
-Please note that OneConfig can only render .jpg, .png and .svg files.
+Please note that this can only render .jpg, .png and .svg files.
 
 ## Info Icons
 

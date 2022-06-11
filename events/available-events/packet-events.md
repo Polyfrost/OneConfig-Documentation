@@ -11,7 +11,7 @@ SendPacketEvent is (as the name suggests) an event that is fired every time the 
 This event also gets the packet that is going to be sent, as a `Packet<?>`. You can use code like the code below to do things with it.
 
 {% hint style="warning" %}
-This event is Cancel-able, meaning you can stop the packet from getting into the games code. Be careful with what you cancel!
+This event is cancellable, meaning you can stop the packet from getting into the games code. Be careful with what you cancel!
 {% endhint %}
 
 ```java
@@ -24,14 +24,10 @@ public void onPacketSend(SendPacketEvent event) {
         // do something with it
         System.out.println("Entity attempted to be spawned with ID: " + packet.getEntityID());
         // cancel the event afterwards, rendering this packet useless.
-        event.cancel();
+        event.isCancelled = true;
     }
 }
 ```
-
-
-
-
 
 ## ReceivePacketEvent
 
