@@ -36,7 +36,7 @@ public static boolean something = false;        // default value
 
 ## Dual Option
 
-The dual option is a simple config component that allows for more clarity, for example in a boolean that determines weather to display something on the Left, or on the Right. It has nice animations.
+The dual option is a simple config component that allows for more clarity, for example in a boolean that determines whether to display something on the Left, or on the Right. It has nice animations.
 
 As always, it has a single and dual column variant.
 
