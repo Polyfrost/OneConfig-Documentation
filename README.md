@@ -1,14 +1,12 @@
 ---
-description: Begin here!
+description: Welcome to the documentation!
 coverY: 0
 layout: landing
 ---
 
-# Welcome to OneConfig!
+# OneConfig Documentation
 
-Welcome!
-
-Welcome to the documentation for OneConfig. OneConfig is a configuration and general-purpose library for Minecraft, made for anyone from developers to end-users. This documentation will serve as a place to discover more about OneConfig, its premise, and how to develop mods that use it.
+OneConfig is a configuration and general-purpose library for Minecraft, made for anyone from developers to end-users. This documentation will serve as a place to discover more about OneConfig, its premise, and how to develop mods that use it.
 
 Please keep in mind that this documentation is still under construction, feedback is appreciated!
 
@@ -24,7 +22,7 @@ OneConfig is designed to be a multiplatform, easy to use library that provides f
 
 We want people to be able to configure their mods in one GUI like a custom client, while allowing for the customizability and versatility of loaders like Forge. It's designed to work with pretty much any mod, and includes [compatibility](config/compatibility/ "mention") features to allow mods that might not use the OneConfig system yet to still be edited and used inside the GUI.
 
-We also hope to provide a well documented, easily understandable general purpose library with many [Broken link](broken-reference "mention") so more developers can come onto the Minecraft modding scene with ease.
+We also hope to provide a well documented, easily understandable general purpose library with easy-to-understand documentation so more developers can arrive to the Minecraft modding scene with ease.
 
 
 
@@ -40,7 +38,7 @@ Wow, looks good right? Here you can configure all your mods, even ones that don'
 
 Welcome!
 
-Here you can find how to create Minecraft mods with OneConfig, create configurations for your mods that automatically save and can be edited from the OneConfig GUI, create commands and your own GUI using [oneuiscreen.md](gui/oneuiscreen.md "mention") and much, much more!
+Here you can find how to create Minecraft mods with OneConfig, create configurations for your mods that automatically saved and can be edited from the OneConfig GUI, create commands and your own GUI using [oneuiscreen.md](gui/oneuiscreen.md "mention") and much, much more!
 
 If you are brand new to Minecraft modding, then you have come to the right place! Minecraft modding can be very scary at first, especially with the lack of good documentation on the web in some places - especially older versions. Make sure to check out [getting-started-with-modding.md](basics/getting-started-with-modding.md "mention") to get started!
 
