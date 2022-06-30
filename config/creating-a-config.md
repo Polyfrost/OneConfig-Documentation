@@ -19,6 +19,7 @@ Simple! Now, you need to create a constructor for your config, which takes a Mod
 public MyConfig () {
     // Available mod types: PVP, HUD, UTIL_QOL, HYPIXEL, SKYBLOCK
     super(new Mod("My Mod", ModType.UTIL_QOL), "config.json");
+    initialize();
 }
 ```
 
@@ -28,6 +29,7 @@ Also, if you like, you can specify an icon for your mod which is also shown in t
 public MyConfig() {
     // Available mod types: PVP, HUD, UTIL_QOL, HYPIXEL, SKYBLOCK
     super(new Mod("My Mod", ModType.UTIL_QOL, "/filepath/to/icon.png"), "config.json");
+    initialize();
 }
 ```
 
