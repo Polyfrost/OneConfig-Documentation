@@ -14,8 +14,8 @@ repositories {
 }
 
 dependencies {
-    compileOnly('cc.polyfrost:oneconfig-1.8.9-forge:1.0.0-alpha41') // Should not be included in jar
-    include('cc.polyfrost:oneconfigwrapper-1.8.9-forge:0.1.0-alpha6') // Should be included in jar
+    compileOnly('cc.polyfrost:oneconfig-1.8.9-forge:1.0.0-alpha+') // Should not be included in jar
+    include('cc.polyfrost:oneconfig-wrapper-launchwrapper:0.1.0-alpha+') // Should be included in jar
 }
 
 jar { // load OneConfig at launch
@@ -36,8 +36,8 @@ repositories {
 }
 
 dependencies {
-    compileOnly("cc.polyfrost:oneconfig-1.8.9-forge:1") // Should not be included in jar
-    include("cc.polyfrost:oneconfigwrapper-1.8.9-forge:1") // Should be included in jar
+    compileOnly("cc.polyfrost:oneconfig-1.8.9-forge:1.0.0-alpha+") // Should not be included in jar
+    include("cc.polyfrost:oneconfig-wrapper-launchwrapper:0.1.0-alpha+") // Should be included in jar
 }
 
 tasks {
