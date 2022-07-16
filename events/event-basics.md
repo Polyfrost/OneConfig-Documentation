@@ -6,7 +6,7 @@ description: Learn more about Events, how they work and their purpose
 
 If you are familiar with Java libraries like `javax.swing`, or have done Forge/Fabric coding before, then don't worry - events shouldn't be a mystery to you!
 
-Forge and Fabric already use events, however they are not very multiplatform - they change massively version to version. That's why OneConfig has its own event system, helping OneConfig to achieve its aim of uniting all Minecraft mods.
+Forge and Fabric already use events. However, they are not very multiplatform - they change massively version to version. That's why OneConfig has its own event system, helping OneConfig to achieve its aim of uniting all Minecraft mods.
 
 ## Getting on the Bus
 

@@ -18,7 +18,7 @@ public static boolean ignored;
 ```
 
 {% hint style="info" %}
-You might have noticed it has a variable beneath it, but it is useless. It is never updated. It is there due to limitations of Java which requires an Object for an `@annotation.`
+You might have noticed it has a very odd variable beneath it, but it is useless. It is never updated. It is there due to limitations of Java which requires an Object for an `@annotation.`
 {% endhint %}
 
 ![An info example with some config components beneath it](<../../.gitbook/assets/image (3).png>)
@@ -35,13 +35,13 @@ It can be displayed in dual or single column.
     text = "An error occured :(",
     type = InfoType.ERROR
 )
-public static boolean uwuimuseless;
+public static boolean ignored;
 
 @Info(
     text = "Just trying to say something here",
     type = InfoType.INFO
 )
-public static boolean uwuimuseless2;
+public static boolean ignored2;
 ```
 
 {% hint style="info" %}
@@ -66,4 +66,4 @@ You can have Page buttons on your Config page, using the @Page annotation. You c
 public static MyPage pageToOpen = new MyPage();
 ```
 
-![Page button example beneath some other config components](<../../.gitbook/assets/image (10).png>)
+![Page button example beneath some other config components](<../../.gitbook/assets/image (10) (1).png>)

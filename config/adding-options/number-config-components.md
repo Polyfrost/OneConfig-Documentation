@@ -24,12 +24,12 @@ public static float slideyboi = 50f; // default value
 ![Slider examples (stepped and normal)](<../../.gitbook/assets/image (8).png>)
 
 {% hint style="info" %}
-So its not really cramped, a slider can only be displayed in a dual column style.
+So that it's not cramped, a slider can only be displayed in a dual-column style.
 {% endhint %}
 
 ## Number Input
 
-The number input is an adapted text field that only accepts valid number values. It similarly can be a float or integer. It can be displayed in either a dual or single column mode.
+The number input is an adapted text field that only accepts valid numeric values. It similarly can be a float or integer. It can be displayed in either a dual or single-column mode.
 
 It also has cute little arrows next to it which can be clicked to increase or decrease the number by the `step` value (default 1)
 
@@ -41,5 +41,3 @@ It also has cute little arrows next to it which can be clicked to increase or de
 )
 public static int num = 20; // defualt value
 ```
-
-// todo add image

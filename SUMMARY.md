@@ -1,13 +1,8 @@
 # Table of contents
 
-* [Welcome to OneConfig!](README.md)
-* [Including OneConfig](including-oneconfig.md)
-
-## Modding Basics <a href="#basics" id="basics"></a>
-
-* [Getting Started with Modding](basics/getting-started-with-modding.md)
-* [Project Setup](basics/project-setup.md)
-* [Creating a Mod](basics/creating-a-mod.md)
+* [Introduction](README.md)
+* [Getting Started](getting-started.md)
+* [Modding Basics](including-oneconfig.md)
 
 ## Configuration <a href="#config" id="config"></a>
 
@@ -19,8 +14,7 @@
   * [Text Configs](config/adding-options/text-configs.md)
   * [Buttons, Colors and Keybinds](config/adding-options/buttons-colors-and-keybinds.md)
   * [Decorative Components](config/adding-options/decorative-config-components.md)
-* [Compatibility](config/compatibility/README.md)
-  * [Vigilance Compatibility (VCAL)](config/compatibility/vigilance-compatibility-vcal.md)
+* [Migration](config/compatibility.md)
 
 ## Events
 

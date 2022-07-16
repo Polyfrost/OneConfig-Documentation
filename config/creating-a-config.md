@@ -13,17 +13,19 @@ public class MyConfig extends Config {
 }
 ```
 
-Simple! Now, you need to create a constructor for your config, which takes a Mod object, which stores the name, and category of your mod (seen in the GUI later); along with the name of the config file for your mod, which usually is "yourmodname.json".
+Simple! Now, you need to create a constructor for your config. This takes a Mod object, which stores the name and category of your mod (seen in the GUI later), along with the name of the config file for your mod, which usually is "yourmodname.json".
 
 ```java
-public MyConfig () {
+public MyConfig() {
     // Available mod types: PVP, HUD, UTIL_QOL, HYPIXEL, SKYBLOCK
     super(new Mod("My Mod", ModType.UTIL_QOL), "config.json");
     initialize();
 }
 ```
 
-Also, if you like, you can specify an icon for your mod which is also shown in the GUI. If you have an icon (PNG or SVG), do this instead:
+If you have any confusion as to which category your mod fight fall into, you may contact us at our [Discord](https://polyfrost.cc/discord) by creating a **Developer ticket.**
+
+If you wish, you can also specify an icon for your mod which is also shown in the GUI. If you have an icon (PNG or SVG), do this instead:
 
 ```java
 public MyConfig() {
@@ -33,7 +35,7 @@ public MyConfig() {
 }
 ```
 
-Finally, you have to initialize your config when the game launches, Which can easily be done using [Broken link](broken-reference "mention") system and `InitializationEvent`, most commonly in your main class:
+Finally, you have to initialize your config when the game launches. This can easily be done using the [Broken link](broken-reference "mention") system and `InitializationEvent`, most commonly in your main class:
 
 ```java
 public class MyMod {
@@ -46,7 +48,7 @@ public class MyMod {
 }
 ```
 
-That's it! Simple right? Your config is now registered in OneConfig, can be seen in the GUI, so now it's time to start adding options!
+That's it! Simple right? Your config is now registered in OneConfig and can be seen in the GUI, so now it's time to start adding options!
 
 
 

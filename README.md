@@ -1,49 +1,15 @@
 ---
-description: Begin here!
 coverY: 0
 layout: landing
 ---
 
-# Welcome to OneConfig!
+# Introduction
 
-Welcome!
+Welcome to the OneConfig documentation for developers (and designers, sort of). OneConfig is a configuration and general-purpose library for Minecraft created for everyone, from developers to end-users. These pages are designed to guide you in your journey with OneConfig, empowering your Minecraft mods with amazing user experiences and providing you with carefully crafted development tools.&#x20;
 
-Welcome to the documentation for OneConfig. OneConfig is a configuration and general-purpose library for Minecraft, made for anyone from developers to end-users. This documentation will serve as a place to discover more about OneConfig, its premise, and how to develop mods that use it.
+Keep in mind, however, that this documentation is still under construction, so feedback is highly appreciated.
 
-Please keep in mind that this documentation is still under construction, feedback is appreciated!
+## Bugs & issues
 
-**Want to get started straight away? Click here!**
+If you believe you are experiencing any bugs with OneConfig, feel free to open an issue at [our GitHub](https://github.com/Polyfrost/OneConfig/issues). If you feel there are any errors, omissions, or unclear statements within our OneConfig documentation, you may open an issue or pull request at [the GitHub for these docs](https://github.com/Polyfrost/OneConfig-Documentation/). Furthermore, we provide developer support and accept feedback in our [Discord server](https://polyfrost.cc/discord), so feel free to join.
 
-{% content-ref url="including-oneconfig.md" %}
-[including-oneconfig.md](including-oneconfig.md)
-{% endcontent-ref %}
-
-## Our Aims
-
-OneConfig is designed to be a multiplatform, easy to use library that provides features for developers and players in a beautiful, united GUI. We hope to unite the modding scene across Forge and Fabric, and look good while doing it.
-
-We want people to be able to configure their mods in one GUI like a custom client, while allowing for the customizability and versatility of loaders like Forge. It's designed to work with pretty much any mod, and includes [compatibility](config/compatibility/ "mention") features to allow mods that might not use the OneConfig system yet to still be edited and used inside the GUI.
-
-We also hope to provide a well documented, easily understandable general purpose library with many [Broken link](broken-reference "mention") so more developers can come onto the Minecraft modding scene with ease.
-
-
-
-## For the Players
-
-If you are a Minecraft player, and you have just found one of your mods has installed OneConfig, then hi! Welcome to our library! If you're just curious about OneConfig, then feel free to look around these docs! The developer that made your mod probably wanted an easy way to store and edit configuration and look good while doing it. If you want to open OneConfig to configure your mods, just type `/oneconfig` in chat!
-
-Wow, looks good right? Here you can configure all your mods, even ones that don't use OneConfig (hopefully), edit and share your screenshots, add HUDs, and loads more! Have fun! :)
-
-
-
-## For the Developers
-
-Welcome!
-
-Here you can find how to create Minecraft mods with OneConfig, create configurations for your mods that automatically save and can be edited from the OneConfig GUI, create commands and your own GUI using [oneuiscreen.md](gui/oneuiscreen.md "mention") and much, much more!
-
-If you are brand new to Minecraft modding, then you have come to the right place! Minecraft modding can be very scary at first, especially with the lack of good documentation on the web in some places - especially older versions. Make sure to check out [getting-started-with-modding.md](basics/getting-started-with-modding.md "mention") to get started!
-
-If you are a more experienced developer and just want to add OneConfig to your mod, make sure to check out the next page [including-oneconfig.md](including-oneconfig.md "mention") to find out how to add it to your mod.
-
-### And most of all, happy modding!

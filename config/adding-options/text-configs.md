@@ -7,7 +7,7 @@ description: Learn about the config components that allow the user to enter text
 ## Normal Text
 
 A normal text input field, which the user can type in. There isn't really that much more to it!\
-It has dual and single column variants.
+It has dual and single-column variants.
 
 ```java
 @Text(
@@ -18,12 +18,12 @@ It has dual and single column variants.
 public static String hi = "";
 ```
 
-![Example text fields](<../../.gitbook/assets/image (11).png>)
+![Example text fields](<../../.gitbook/assets/image (11) (1).png>)
 
-## Multiline Text Input
+## Text box
 
 Basically the same as a normal text field, but it can have multiple lines. It dynamically changes size based on the amount of text written in it.\
-It only has a dual column variant.
+It only has a dual-column variant.
 
 ```java
 @Text(
@@ -37,10 +37,10 @@ public static String moretext = "";
 
 ## Secure Text Input
 
-The same as a normal text input field, but will show text as stars until the show button is pressed. You can use it for passwords, API keys and other secrets. \
-It has single and dual column variants.
+The same as a normal text input field, but will show the text as stars until the show button is pressed. You can use it for passwords, API keys, and other secrets. \
+It has single and dual-column variants.
 
-These are not shared when the profile is shared (coming soon-ish)
+These are not shared when the profile is shared (coming soon-ish).
 
 ```java
 @Text(

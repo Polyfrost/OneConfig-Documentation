@@ -13,12 +13,12 @@ System.out.println("My thing in a variable called bob: " + MyConfig.bob);
 System.out.println("Is this enabled? " + MyConfig.enabled);
 ```
 
-Simple, right? Here is an example of how an option should look:
+Here is an example of how an option should look:
 
 ```java
 @Switch(
     name = "A random switch",
-    size = OptionSize.DUAL, // optional, declares weather the element is single colum or dual column
+    size = OptionSize.DUAL, // optional, declares weather the element is single column or dual column
     category = "General", // optional
     subcategory = "Switches" // optional
 )
@@ -26,14 +26,14 @@ public static boolean bob = false; // this is the defualt value.
 ```
 
 {% hint style="info" %}
-Subcategories and Options are displayed in the order they are put in the config. You can have multiple subcategories with the same name.
+Subcategories and Options are displayed in the order they are put in the config. You can have multiple subcategories with the same name, but this is not recommended unless it genuinely makes sense (e.g. "HUD Options" for two separate types of HUDs).
 {% endhint %}
 
 ## Disabling Options
 
 Options can be disabled by adding a dependency to them. When they are disabled, they cannot be interacted with by the user and are shown grayed out for clarity.&#x20;
 
-If you want to do this, simply go into the constructor of your config and add an`addDependency` clause, with the **String argument being the variable name of the one you want to be dependant**,  and the **second argument is the condition that has to be true** for the config element to be enabled.&#x20;
+If you want to do this, simply go into the constructor of your config and add an`addDependency` clause, with the **String argument being the variable name of the one you want to be dependant**, and the **second argument is the condition that has to be true** for the config element to be enabled.&#x20;
 
 If you like, you can set this to be an if statement, or another config component, as in the example:
 
@@ -52,7 +52,7 @@ public static boolean subSwitch = false;
 
 public TestConfig() {
     super(new Mod("My Mod", ModType.UTIL_QOL), "mymod.json");
-    addDependency("subSwitch", () -> masterSwitch); // disable subSwitch if masterSwitch is disabled, making it dependant
+    addDependency("subSwitch", () -> masterSwitch); // disable subSwitch if masterSwitch is off, making it dependant
 }
 ```
 

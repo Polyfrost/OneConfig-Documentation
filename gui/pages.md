@@ -6,7 +6,7 @@ description: Learn more about OneConfig's pages
 
 ## What are Pages?
 
-Pages are the name given to the displays inside the OneConfig UI, and they are 1056x728 (1024x696 usable) rectangle of the GUI. All the content of OneConfig is displayed inside this area. They are fully scrollable, and you can even make your own pages if you want!
+Pages are the name given to the displays inside the OneConfig UI, and they are 1056x728 (1024x696 usable) rectangles of the GUI. All the content of OneConfig is displayed inside this area. They are fully scrollable, and you can even make your own pages if you want!
 
 ![OneConfig Page (highlighted in red)](<../.gitbook/assets/image (8) (1).png>)
 
