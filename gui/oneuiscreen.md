@@ -19,7 +19,8 @@ public class MyScreen extends OneUIScreen {
     }
     
     @Override
-    public void onScreenOpen() {
+    public void initScreen(int width, int height) {
+        super.initScreen(width, height);
         // setup variables, initialze components, etc.
     }
     
