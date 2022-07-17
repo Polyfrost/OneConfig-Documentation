@@ -26,9 +26,9 @@ short saturation = 50;    // saturation of the color (0-100)
 short brightness = 25;    // brightness of the color (0-100)
 short alpha = 255;        // alpha of the color (0-255)
 
-int argb = -38279103;    // the color stored as ARGB merged integer (used for renderingn)
+int argb = -38279103;    // the color stored as ARGB merged integer (used for rendering)
 
-// how argb is made (hexadecimal):
+// how ARGB is made (hexadecimal):
 // 0xFF000000 alpha (0-FF)
 // 0x00FF0000 red (0-FF)
 // 0x0000FF00 blue (0-FF)
@@ -55,9 +55,9 @@ OneColor also has full support for hex strings. You can create a OneColor from a
 
 The hex parser has **auto-completion features**, and supports a variety of hexes even if they are malformed:
 
-* If the hex is less than 6 characters, 0s are appended.
-* If the hex is 3 characters long, it is understood as a 3-digit RGB hex and is repeated appropriately.
-  * E.g. CF2 -> CCFF22.
-* If the hex is 1 character long, it is repeated across the R, G and B fields.&#x20;
-  * E.g. C -> CCCCCC.
-* The alpha will be fetched from the hex color if it is 8 characters long (RRGGBBAA).
+- If the hex is less than 6 characters, 0s are appended.
+- If the hex is 3 characters long, it is understood as a 3-digit RGB hex and is repeated appropriately.
+  - E.g. CF2 -> CCFF22.
+- If the hex is 1 character long, it is repeated across the R, G and B fields.&#x20;
+  - E.g. C -> CCCCCC.
+- The alpha will be fetched from the hex color if it is 8 characters long (RRGGBBAA).

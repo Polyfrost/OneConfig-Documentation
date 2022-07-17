@@ -15,7 +15,7 @@ It has a String array of options, which you can fill with as many as you like. T
     name = "I drop!",        // name of the component
     options = {"An option", "Another option", "Maybe this one?", "Or this!"},
 )
-public static int value = 1;        // defualt option (here "Another Option")
+public static int value = 1;        // default option (here "Another Option")
 ```
 
 ![Dropdown example, open and closed with list](<../../.gitbook/assets/image (9).png>)
