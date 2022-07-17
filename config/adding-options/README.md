@@ -22,7 +22,7 @@ Here is an example of how an option should look:
     category = "General", // optional
     subcategory = "Switches" // optional
 )
-public static boolean bob = false; // this is the defualt value.
+public static boolean bob = false; // this is the default value.
 ```
 
 {% hint style="info" %}

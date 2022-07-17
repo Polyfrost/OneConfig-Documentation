@@ -32,7 +32,7 @@ It can be displayed in dual or single column.
 
 ```java
 @Info(
-    text = "An error occured :(",
+    text = "An error occurred :(",
     type = InfoType.ERROR
 )
 public static boolean ignored;

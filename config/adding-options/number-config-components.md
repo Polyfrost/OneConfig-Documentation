@@ -39,5 +39,5 @@ It also has cute little arrows next to it which can be clicked to increase or de
     min = 0, max = 37,        // min and max values (anything above/below is set to the max/min
     step = 5        // each time the arrow is clicked it will increase/decrease by this amount
 )
-public static int num = 20; // defualt value
+public static int num = 20; // default value
 ```

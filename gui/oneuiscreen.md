@@ -17,19 +17,19 @@ public class MyScreen extends OneUIScreen {
     public MyScreen() {
         super();        // constructor for your screen - you can initialize things here as well
     }
-    
+
     @Override
     public void initScreen(int width, int height) {
         super.initScreen(width, height);
-        // setup variables, initialze components, etc.
-    }
-    
+        // setup variables, initialize components, etc.
+    }       
+
     @Override
     public void draw(long vg, float partialTicks) {
         // draw script for the screen with a NanoVG context already prepared
         RenderManager.drawRoundedRect(10,50,100,100,-1,12f);
         // You can also use partialTicks for animations as a deltaTime.
-    
+
     @Override
     public void onScreenClose() {
         // clean up, etc. when the screen closes.
