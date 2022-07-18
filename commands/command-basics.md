@@ -34,7 +34,7 @@ Awesome! now `/examplemod` will print in the console `"Hello, World!"`. But what
     }
 ```
 
-And now, if we do `/examplemon ping`, there will be a `"pong"` printed in the console! Now, we just have to put it all together and were done!
+And now, if we do `/examplemod ping`, there will be a `"pong"` printed in the console! Now, we just have to put it all together and were done!
 
 ```java
 @Command(value = ExampleMod.MODID, description = "Just a simple command")
