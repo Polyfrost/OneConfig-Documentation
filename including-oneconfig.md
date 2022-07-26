@@ -72,11 +72,9 @@ In case you weren't sure, here is an example of the download dialogue box:
 
 ### Step 4: Reloading and Building
 
-Now you have your JDKs set up, you can go ahead and close all those windows to go back to the main IDE.&#x20;
+Now you have your JDKs set up, you can go ahead and close all those windows to go back to the main IDE. Click the little green hammer in the top right of your screen, and wait for it to download all the necessary libraries and Minecraft itself. Once that's done, you need to run `genSources` to decompile the game so it's easier to view. The easiest way to do this is to **Hit Ctrl 3 times**, then type `gradle genSources` to decompile it.
 
-Although not necessary, you can run `genSources` to decompile the game so it's easier to view. The easiest way to do this is to go to the `Gradle` tab on the right of your screen, select OneConfig, Tasks, `loom` and double click `genSources`.
-
-Now, select `ide` in the Tasks section and double click `genIntellijRuns`. This generates the run scripts for Minecraft on IntelliJ.
+Next, **hit control 3 times again**, and type `gradle genintellijruns`. Run that as well to generate the run scripts for Minecraft.
 
 {% hint style="info" %}
 **Note:** You might need to restart IntelliJ for the run to show up.

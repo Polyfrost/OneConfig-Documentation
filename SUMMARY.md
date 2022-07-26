@@ -14,6 +14,7 @@
   * [Text Configs](config/adding-options/text-configs.md)
   * [Buttons, Colors and Keybinds](config/adding-options/buttons-colors-and-keybinds.md)
   * [Decorative Components](config/adding-options/decorative-config-components.md)
+  * [Custom options](config/adding-options/custom-options.md)
 * [Migration](config/compatibility.md)
 
 ## Events
