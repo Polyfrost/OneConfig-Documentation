@@ -58,8 +58,7 @@ tasks {
             "ModSide" to "CLIENT",
             "TweakOrder" to 0,
             "ForceLoadAsMod" to true,
-            "FMLCorePlugin" to "cc.polyfrost.oneconfigwrapper.OneConfigWrapper",
-            "FMLCorePluginContainsFMLMod" to "yes"
+            "TweakClass" to "cc.polyfrost.oneconfigwrapper.OneConfigWrapper"
         }
     }
 }
