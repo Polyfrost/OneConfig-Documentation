@@ -18,7 +18,7 @@ Here is an example of how an option should look:
 ```java
 @Switch(
     name = "A random switch",
-    size = OptionSize.DUAL, // optional, declares weather the element is single column or dual column
+    size = OptionSize.DUAL, // optional, declares whether the element is single column or dual column
     category = "General", // optional
     subcategory = "Switches" // optional
 )
