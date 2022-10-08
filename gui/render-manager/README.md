@@ -33,7 +33,7 @@ Make sure to check out the Dokka Javadocs for more information on available meth
 
 ## When do I draw?
 
-A great time to draw things on the screen is using the draw() method of [oneuiscreen.md](../oneuiscreen.md "mention") in your own GUI screen, or you can use [hudrenderevent.md](../../events/available-events/hudrenderevent.md "mention") to draw things on the screen even when the player isn't in a GUI.
+A great time to draw things on the screen is using the draw() method of [oneuiscreen.md](../../utils/oneuiscreen.md "mention") in your own GUI screen, or you can use [hudrenderevent.md](../../events/available-events/hudrenderevent.md "mention") to draw things on the screen even when the player isn't in a GUI.
 
 ## Colors
 

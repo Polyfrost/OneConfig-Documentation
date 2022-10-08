@@ -31,11 +31,9 @@
 ## Graphics & UI <a href="#gui" id="gui"></a>
 
 * [Render Manager](gui/render-manager/README.md)
-  * [Animations](gui/render-manager/animations.md)
   * [Font Rendering](gui/render-manager/font-rendering.md)
 * [Elements](gui/elements.md)
 * [Pages](gui/pages.md)
-* [OneUIScreen](gui/oneuiscreen.md)
 
 ## Commands
 
@@ -44,14 +42,12 @@
 
 ## HUDs
 
-* [Creating a HUD](huds/creating-a-hud.md)
+* [HUD Basics](huds/creating-a-hud.md)
 
 ## Utilities <a href="#utils" id="utils"></a>
 
-* [OneConfig's Utilities](utils/oneconfigs-utilities.md)
+* [OneConfig's Utilities](utils/oneconfigs-utilities/README.md)
+  * [Notifications](utils/oneconfigs-utilities/notifications.md)
+  * [HypixelUtils](utils/oneconfigs-utilities/hypixelutils.md)
 * [OneColor](utils/onecolor.md)
-* [OneKeyBind](utils/onekeybind.md)
-* [Available Utilities](utils/available-utilities/README.md)
-  * [InputUtils](utils/available-utilities/inpututils.md)
-  * [ColorUtils](utils/available-utilities/colorutils.md)
-  * [HypixelUtils](utils/available-utilities/hypixelutils.md)
+* [OneUIScreen](utils/oneuiscreen.md)

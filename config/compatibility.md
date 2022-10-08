@@ -4,13 +4,13 @@ description: Learn how to migrate configs to OneConfig.
 
 # Migration
 
-You might want to migrate a different config to OneConfig so users don't lose their configs, OneConfig has the ability to do that.
+### What are they?
 
-OneConfig includes a migrator for vigilance, but you can also create a custom migrator if you need that.
+OneConfig includes a migration system, which can be used to turn various forms of old config files or other config systems into OneConfig readable ones. OneConfig has built-in support for JSON files, Vigilance, and .cfg Forge files.
 
-### Vigilance Migrator
+These Migrators are extremely useful for if you are wanting to change from using a different config system to the OneConfig one, as it allows your users to just update the mod and their config should be automatically migrated into the OneConfig system!
 
-To use the vigilance migrator all you need to do is register it and give it the location to your old vigilance config.
+All migrators implement the Migrator interface, and you can create your own as well if you want. They all work in the same way, where you pass the expected location on the player's client to the old config file, and OneConfig will do the rest, like this:
 
 ```java
 public MyConfig() {
@@ -19,25 +19,39 @@ public MyConfig() {
 }
 ```
 
-If you change the name of an option or what category or subcategory the option is in you will have to provide the old values so the option can be migrated properly, you can do this like this.
+### MigrationNames
+
+Sometimes, you might want to change the name of a field or config element in the new OneConfig system. Don't worry though! We've thought of that and created various `@Annotations` for you to use to ensure that OneConfig can find the old field in the file.
+
+Here is an example of a VigilanceName:
 
 ```java
-@Switch(
-    name = "A random switch",
-    category = "General",
-    subcategory = "Switches"
-)
-@VigilanceName(
+@VigilanceName(                    // retrieve the value from the old JSON file  
     name = "Old Name",
     category = "Old Category",
     subcategory = "Old Subcategory"
 )
+@Switch(                           // initialize a field like a normal config  
+    name = "A random switch",
+    category = "General",
+    subcategory = "Switches"
+)
 public static boolean bob = false;
 ```
 
-### Custom Migrator
+And a JsonName:
 
-To create a custom migrator you have to implement the `Migrator` interface and implement the `getValue` function, this function returns the value the field should be set too. For a full example see [`VigilanceMigrator`](https://github.com/Polyfrost/OneConfig/blob/master/src/main/java/cc/polyfrost/oneconfig/config/migration/VigilanceMigrator.java).
+```java
+ @JsonName("hearts.blur.disabled")                     // retrieve the value from the old JSON file  
+ @Switch(name = "Disable Blur", category = "Hearts")   // initialize a field like a normal config  
+ public static boolean isHeartsBlurDisabled = false;
+```
+
+
+
+### Custom Migrators
+
+To create a custom migrator, you have to implement the `Migrator` interface and implement the `getValue` function, and this function returns the value the field should be set too, according to the old config. For a full example see [`VigilanceMigrator`](https://github.com/Polyfrost/OneConfig/blob/master/src/main/java/cc/polyfrost/oneconfig/config/migration/VigilanceMigrator.java).
 
 ```java
 public class MyMigrator implements Migrator {
@@ -45,14 +59,5 @@ public class MyMigrator implements Migrator {
     public Object getValue(Field field, String name, String category, String subcategory) {
         // logic to get old value and return object here
     }
-}
-```
-
-Then to use this migrator just define it when you create your config like the vigilance migrator.
-
-```java
-public MyConfig() {
-    super(new Mod("My Mod", ModType.UTIL_QOL, new MyMigrator()), "config.json");
-    initialize();
 }
 ```

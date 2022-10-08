@@ -1,2 +1,0 @@
-# OneConfig's Utilities
-

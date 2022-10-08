@@ -48,11 +48,11 @@ This config component uses [onecolor.md](../../utils/onecolor.md "mention") to s
 
 ## Keybinds
 
-OneConfig also has keybind elements that can be displayed as configs. They replace the Minecraft keybind system and use multi-platform methods to process key presses. See [onekeybind.md](../../utils/onekeybind.md "mention") for more information.\
+OneConfig also has keybind elements that can be displayed as configs. They replace the Minecraft keybind system and use multi-platform methods to process key presses.\
 It, similarly, has dual and single-column variants.
 
 {% hint style="success" %}
-This config component uses [onekeybind.md](../../utils/onekeybind.md "mention") to store the keybinds.
+This config component uses OneKeyBind to store the keybinds.
 {% endhint %}
 
 ```java

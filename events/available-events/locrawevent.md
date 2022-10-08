@@ -6,7 +6,7 @@ description: Learn more about LocrawEvent
 
 ## What is Locraw?
 
-Locraw is a Hypixel specific feature which means Location Raw, and it is a .json String sent by the server to the chat upon typing of the command /locraw. It is extremely useful for mods that are gamemode-specific, for example Skyblock mods that should only work in Skyblock. See [hypixelutils.md](../../utils/available-utilities/hypixelutils.md "mention") for more information on Locraw.
+Locraw is a Hypixel specific feature which means Location Raw, and it is a .json String sent by the server to the chat upon typing of the command /locraw. It is extremely useful for mods that are gamemode-specific, for example Skyblock mods that should only work in Skyblock. See [Broken link](broken-reference "mention") for more information on Locraw.
 
 ## Event information
 

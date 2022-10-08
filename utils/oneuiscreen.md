@@ -6,7 +6,7 @@ description: OneConfig's easy to use, multiplatform GuiScreen alternative
 
 ## Why?
 
-OneUIScreen is a convenient class that can be used for easy handling of mouse, keyboard, and rendering with NanoVG (see [inpututils.md](../utils/available-utilities/inpututils.md "mention")).
+OneUIScreen is a convenient class that can be used for easy handling of mouse, keyboard, and rendering with NanoVG (see [Broken link](broken-reference "mention")).
 
 ## Creating a OneUIScreen
 
@@ -38,4 +38,4 @@ public class MyScreen extends OneUIScreen {
 
 ## Displaying Your Screen
 
-You can Display your screen in many ways, for example using a [broken-reference](broken-reference/ "mention") implementation, or opening it when a key is pressed using [onekeybind.md](../utils/onekeybind.md "mention"). They can be opened easily using `GuiUtils.displayScreen(new MyScreen())`.
+You can Display your screen in many ways, for example using a [#button](../config/adding-options/buttons-colors-and-keybinds.md#button "mention") implementation, or opening it when a key is pressed using a OneKeyBind. They can be opened easily using `GuiUtils.displayScreen(new MyScreen())`.
