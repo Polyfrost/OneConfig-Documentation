@@ -39,7 +39,8 @@
 
 ## Commands
 
-* [Command Basics](commands/command-basics.md)
+* [Commands](commands/commands.md)
+* [An Example Command](commands/example.md)
 
 ## HUDs
 
