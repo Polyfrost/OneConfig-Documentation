@@ -6,14 +6,16 @@ description: Find out how to create Configs with OneConfig
 
 ## Getting Started
 
-To create a new config, you need to create a brand new class that extends the `Config` class, just like this:
+### Building the bare bones
+
+To create a new config, you need to create a new class that extends `Config`, just like this:
 
 ```java
 public class MyConfig extends Config {
 }
 ```
 
-Simple! Now, you need to create a constructor for your config. This takes a Mod object, which stores the name and category of your mod (seen in the GUI later), along with the name of the config file for your mod, which usually is "yourmodname.json".
+Simple! Now, it needs a constructor. The `Mod` object stores both its name and category, along with the mod's file name. Usually, named `"yourmodname.json"`.
 
 ```java
 public MyConfig() {
@@ -23,7 +25,7 @@ public MyConfig() {
 }
 ```
 
-If you have any confusion as to which category your mod fight fall into, you may contact us at our [Discord](https://polyfrost.cc/discord) by creating a **Developer ticket.**
+### Additional cosmetics
 
 If you wish, you can also specify an icon for your mod which is also shown in the GUI. If you have an icon (PNG or SVG), do this instead:
 
@@ -35,7 +37,9 @@ public MyConfig() {
 }
 ```
 
-Finally, you have to initialize your config when the game launches. This can easily be done using the [Broken link](broken-reference "mention") system and `InitializationEvent`, most commonly in your main class:
+## Initializing on launch
+
+Finally, you have to initialize your config when the game launches. This can easily be done using the [Broken link](broken-reference "mention") system, with the `InitializationEvent`, most commonly in your main class:
 
 ```java
 public class MyMod {
@@ -48,7 +52,11 @@ public class MyMod {
 }
 ```
 
-That's it! Simple right? Your config is now registered in OneConfig and can be seen in the GUI, so now it's time to start adding options!
+And you're done, pretty simple huh? Your config is now registered and can be seen in the GUI. So naturally, it's time to add some options.
+
+{% content-ref url="adding-options/" %}
+[adding-options](adding-options/)
+{% endcontent-ref %}
 
 
 
