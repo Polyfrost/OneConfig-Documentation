@@ -6,9 +6,9 @@ description: Learn about components that allow the user to select between multip
 
 ## Dropdown List
 
-A dropdown is a simple list that allows for one option to be selected from a list. They are commonly used for things that have modes. It, as usual, has dual and single-column variants.
+A dropdown list lets the user select options from a list. If switches are booleans, and sliders are integers, a dropdown is an enum. It's got both single and dual-column variants.
 
-It has a String array of options, which you can fill with as many as you like. The variable output is set as the index of that option in the list.
+It uses a String Array to list the options and returns its position index within that array. In the example below, the default value is set to 1, which corresponds to the second option.
 
 ```java
 @Dropdown(

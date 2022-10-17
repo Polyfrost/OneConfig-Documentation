@@ -18,7 +18,7 @@ For this tutorial, we are going to use the OneConfig Example which can be found 
 
 Firstly, head to their [**downloads page**](https://www.jetbrains.com/idea/download/) and download IntelliJ IDEA for your operating system or platform. We recommend the 'Community Edition' for casual developers. It's free and probably has all the features you'll need. After downloading it, follow the prompts to get it installed.
 
-Once that has been downloaded, you may want to open up your files browser and create yourself a directory for all your mods (e.g `C:/Users/Bob/Documents/Minecraft Mods/`). This is just a quality of life step, so if you wish, you can ignore it and do as you wish.
+Once that has been downloaded, you may want to open up your files browser and create yourself a directory for all your mods (e.g `C:/Users/Bob/Developer/`). This is just a quality of life step, so if you wish, you can ignore it and do as you wish.
 
 ### Step 2: Creating the Project
 
@@ -28,7 +28,7 @@ Now that you have installed IntelliJ, you should be ready to clone the project. 
 
 Once you're at this screen:
 
-* Click the **Get from VCS** button in the top right.
+* Click the **Get from VCS** button.
 * Go to **Repository URL**.
 * Check that **Version Control** is set to **Git**.
 * Set the directory to the root folder you made earlier for mod development.
@@ -47,9 +47,8 @@ Now, you will need to set up your **Java Development Kits (JDKs)** to get starte
 
 #### GRADLE JVM
 
-Firstly, hit **Ctrl+Alt+S** to open Settings, and go to **Build, Execution and Deployment** **> Build Tools > Gradle** from the left sidebar menu. At the bottom right of this screen, there will be a dropdown list button entitled **Gradle JVM.** Click it to open the dropdown list menu.
-
-* Press **Ctrl+Alt+S** to open Settings.
+* **Windows & Linux:** Press **Ctrl+Alt+S** to open **Settings**\
+  **macOS:** Press **⌘ , (command + comma)**, or go to **IntelliJ IDEA > Preferences** from the menu bar, to open **Preferences**
 * Go to **Build, Execution and Deployment** **> Build Tools > Gradle** from the left sidebar menu.
 * At the bottom of this screen, look for a dropdown list button labelled **Gradle JVM**. Open the dropdown list.
 * Now, click **Download JDK** and set the **Version** to **17 or above** on the popup that appears. Don't change anything else — just hit **Download**. Once finished, set this new JVM as the **Gradle JVM** and click **Apply** to complete the changes.
@@ -58,11 +57,13 @@ Firstly, hit **Ctrl+Alt+S** to open Settings, and go to **Build, Execution and D
 
 #### PROJECT JVM
 
-* Press **Ctrl+Alt+Shift+S** to open Project Settings.&#x20;
+* Windows & Linux: Press **Ctrl+Alt+Shift+S** to open **Project Structure**. \
+  macOS: Press **⌘ ; (command + semicolon)**, or go to **File > Project Structure** from the menu bar to open **Project Structure**.
 * Go to **Project Settings > Project**.
 * Open the **SDK** dropdown menu.
 * Again, go to **Add SDK** then **Download JDK**. This time, **choose 1.8 as the version** and press **Download**. Once finished, set this new JVM as the **Project SDK**. Click **Apply** to set the changes.
-* Again, go to **Add SDK and then Download SDK**. This time, choose **1.8 as the version** and press **Download**. Once that has finished, set that new JVM as the **Project SDK** and click **Apply** to set the changes.I
+* Again, go to **Add SDK and then Download SDK**. This time, choose **1.8 as the version** and press **Download**. Once that has finished, set that new JVM as the **Project SDK** and click **Apply** to set the changes.
+* Set the **Language level** to **SDK Default**.
 
 ![Project SDK settings](<.gitbook/assets/image (12).png>)
 

@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [Documentation License](documentation-license.md)
 * [Modding Basics](including-oneconfig.md)
 * [Getting Started](getting-started.md)
 
