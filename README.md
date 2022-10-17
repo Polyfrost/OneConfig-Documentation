@@ -1,15 +1,15 @@
 ---
+cover: .gitbook/assets/polyfrost-site_index – 2.png
 coverY: 0
-layout: landing
 ---
 
 # Introduction
 
-Welcome to the OneConfig documentation for developers (and designers, sort of). OneConfig is a configuration and general-purpose library for Minecraft created for everyone, from developers to end-users. These pages are designed to guide you in your journey with OneConfig, empowering your Minecraft mods with amazing user experiences and providing you with carefully crafted development tools.&#x20;
+Welcome to the OneConfig documentation for developers and designers. If you're confused about how to integrate your mod with OneConfig, or just what something does, there's a good chance the answer is here.
 
-Keep in mind, however, that this documentation is still under construction, so feedback is highly appreciated.
+Keep in mind though, that these docs aren't perfect, so if something is wrong, feel free to [fix it yourself](https://github.com/Polyfrost/OneConfig-Documentation/), before we even notice.
 
-## Bugs & issues
+## Contributions
 
-If you believe you are experiencing any bugs with OneConfig, feel free to open an issue at [our GitHub](https://github.com/Polyfrost/OneConfig/issues). If you feel there are any errors, omissions, or unclear statements within our OneConfig documentation, you may open an issue or pull request at [the GitHub for these docs](https://github.com/Polyfrost/OneConfig-Documentation/). Furthermore, we provide developer support and accept feedback in our [Discord server](https://polyfrost.cc/discord), so feel free to join.
+If you encounter any errors or bugs in OneConfig, feel free to [make an issue](https://github.com/Polyfrost/OneConfig/issues) or [pull request.](https://github.com/Polyfrost/OneConfig/pulls) If you're still stuck, join our [Discord](https://polyfrost.cc/discord/) server and create a ticket!
 

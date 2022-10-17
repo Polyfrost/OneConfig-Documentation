@@ -1,8 +1,8 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Getting Started](getting-started.md)
 * [Modding Basics](including-oneconfig.md)
+* [Getting Started](getting-started.md)
 
 ## Configuration <a href="#config" id="config"></a>
 
