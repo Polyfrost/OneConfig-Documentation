@@ -4,11 +4,15 @@ description: Learn all about the number config components in OneConfig
 
 # Number Configs
 
-## Slider
+## Common numbers
 
-The slider is a basic draggable element, often used for numbers that control something like the width of an element. It can be an integer or a float, you can choose!
+### Slider
 
-Sliders also have a little number input box at the side to allow for the user to input a number manually if they like.
+The slider is a basic draggable element, often used for numbers that control something like the width of an element. They have a little input box on the right side, to allow for manual inputs. So it's not cramped, the slider only has a single-column variant.
+
+{% hint style="info" %}
+Sliders can either return an integer or a float, and are able to be stepped.&#x20;
+{% endhint %}
 
 ```java
 @Slider(
@@ -23,11 +27,7 @@ public static float slideyboi = 50f; // default value
 
 ![Slider examples (stepped and normal)](<../../.gitbook/assets/image (8).png>)
 
-{% hint style="info" %}
-So that it's not cramped, a slider can only be displayed in a dual-column style.
-{% endhint %}
-
-## Number Input
+### Number Input
 
 The number input is an adapted text field that only accepts valid numeric values. It similarly can be a float or integer. It can be displayed in either a dual or single-column mode.
 
@@ -41,3 +41,7 @@ It also has cute little arrows next to it which can be clicked to increase or de
 )
 public static int num = 20; // default value
 ```
+
+### When should you use a slider or number input
+
+Essentially, if the feature should be "played with", use a slider. Things like volume, size, or time. Number inputs, on the other hand, are intended for more manual control. Basically, if the user doesn't know the actual number they need, use a slider. Otherwise, number input.
