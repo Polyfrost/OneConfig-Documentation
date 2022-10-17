@@ -4,11 +4,9 @@ description: Learn how to migrate configs to OneConfig.
 
 # Migration
 
-### What are they?
+### What is this?
 
-OneConfig includes a migration system, which can be used to turn various forms of old config files or other config systems into OneConfig readable ones. OneConfig has built-in support for JSON files, Vigilance, and .cfg Forge files.
-
-These Migrators are extremely useful for if you are wanting to change from using a different config system to the OneConfig one, as it allows your users to just update the mod and their config should be automatically migrated into the OneConfig system!
+OneConfig includes a system to help you migrate configs into ones OneConfig can use. For example, OneConfig has built-in support for; JSON, Vigilance, and .cfg Forge files. This is very useful if you want to seamlessly migrate your old mods to OneConfig.
 
 All migrators implement the Migrator interface, and you can create your own as well if you want. They all work in the same way, where you pass the expected location on the player's client to the old config file, and OneConfig will do the rest, like this:
 
@@ -21,9 +19,7 @@ public MyConfig() {
 
 ### MigrationNames
 
-Sometimes, you might want to change the name of a field or config element in the new OneConfig system. Don't worry though! We've thought of that and created various `@Annotations` for you to use to ensure that OneConfig can find the old field in the file.
-
-Here is an example of a VigilanceName:
+Maybe you want to change the name of an old field or element in the new system. We've thought of this, and you can use our various `@Annotations` to maintain the support of your old files. See an example below, using Vigilance.&#x20;
 
 ```java
 @VigilanceName(                    // retrieve the value from the old JSON file  
@@ -51,7 +47,7 @@ And a JsonName:
 
 ### Custom Migrators
 
-To create a custom migrator, you have to implement the `Migrator` interface and implement the `getValue` function, and this function returns the value the field should be set too, according to the old config. For a full example see [`VigilanceMigrator`](https://github.com/Polyfrost/OneConfig/blob/master/src/main/java/cc/polyfrost/oneconfig/config/migration/VigilanceMigrator.java).
+To create a custom migrator, you have to implement the `Migrator` interface and implement the `getValue` function, and this function returns the value the field should be set to, according to the old config. For a full example see [`VigilanceMigrator`](https://github.com/Polyfrost/OneConfig/blob/master/src/main/java/cc/polyfrost/oneconfig/config/migration/VigilanceMigrator.java).
 
 ```java
 public class MyMigrator implements Migrator {
