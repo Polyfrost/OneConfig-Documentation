@@ -4,9 +4,11 @@ description: Learn all about boolean components.
 
 # Boolean Configs
 
-## Switch
+## Common booleans
 
-The switch is a basic boolean, well switch! It has a single and dual column variant. The switch is probably the most common component we offer.
+### Switch
+
+The switch is the best way to represent a simple boolean. It's got both a single and dual column variant, and the option you'll use the most.
 
 ```java
 @Switch(
@@ -20,9 +22,9 @@ This code will create a switch like this:
 
 ![Toggle Switch example (off and on states)](<../../.gitbook/assets/image (17).png>)
 
-## Checkbox
+### Checkbox
 
-A basic checkbox for checking of things. It also has a single and dual column variant:
+A checkbox is the best way to represent less important booleans. It's got both single and dual-column variants.
 
 ```java
 @Checkbox(
@@ -34,11 +36,17 @@ public static boolean something = false;        // default value
 
 ![Checkbox examples (off and on states)](<../../.gitbook/assets/image (4).png>)
 
+### When should you use a switch or checkbox
+
+The switch option is intended for strict ON/OFF options, such as particles. You either see particles, or you don't. In contrast, checkboxes are intended for finer, more detailed control. Maybe you enable potion particles and disable crits.&#x20;
+
 ## Dual Option
 
-The dual option is a simple config component that allows for more clarity, for example in a boolean that determines whether to display something on the left or on the right. It has nice animations.
+Out of the three simple config components, dual options are the most unusual. It's got both single and dual-column variants.
 
-As always, it has a single and dual column variant.
+{% hint style="info" %}
+**Designers note:** These exist for when a simple ON/OFF component wouldn't make sense. Such as a direction, or time of day. Essentially, a boolean that wouldn't make sense with yes/no.
+{% endhint %}
 
 ```java
 @DualOption(

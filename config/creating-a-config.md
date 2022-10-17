@@ -27,7 +27,7 @@ public MyConfig() {
 
 ### Additional cosmetics
 
-If you wish, you can also specify an icon for your mod which is also shown in the GUI. If you have an icon (PNG or SVG), do this instead:
+If you wish, you can specify an icon for your mod that will be shown in the GUI. All you need to do is add a third argument that specifies your icon's file path.
 
 ```java
 public MyConfig() {
@@ -36,6 +36,10 @@ public MyConfig() {
     initialize();
 }
 ```
+
+{% hint style="info" %}
+OneConfig supports both the PNG and SVG (vector) image formats.
+{% endhint %}
 
 ## Initializing on launch
 
