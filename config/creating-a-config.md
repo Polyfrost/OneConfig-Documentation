@@ -49,7 +49,7 @@ Finally, you have to initialize your config when the game launches. This can eas
 public class MyMod {
     public static MyConfig config;
 
-    @Subscribe
+    @SubscribeEvent
     public void onInit(InitializationEvent event) {
         config = new MyConfig();
     }
