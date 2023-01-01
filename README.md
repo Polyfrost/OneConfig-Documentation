@@ -1,8 +1,3 @@
----
-cover: .gitbook/assets/polyfrost-site_index – 2.png
-coverY: 0
----
-
 # Introduction
 
 Welcome to the OneConfig documentation for developers and designers. If you're confused about how to integrate your mod with OneConfig, or just what something does, there's a good chance the answer is here.
