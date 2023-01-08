@@ -8,7 +8,7 @@ If you're unfamiliar with Java, or Minecraft Modding, please read [Modding Basic
 
 ### OneConfig's Example Mod
 
-If you're just starting out, we highly recommend looking at our [example mod](https://github.com/Polyfrost/OneConfigExampleMod/).
+If you're just starting out or need more advanced features like multiple versions, we highly recommend looking at our updatdd [example mod](https://github.com/Polyfrost/OneConfigExampleMod/).
 
 ## Including OneConfig Yourself
 
@@ -16,10 +16,10 @@ If you want to avoid using our own [mod template](https://github.com/Polyfrost/O
 
 {% tabs %}
 {% tab title="Groovy" %}
-```groovy
-loom {
+<pre class="language-groovy"><code class="lang-groovy">loom {
     launchConfigs {
         client {
+            // Loads OneConfig in dev env. Replace other tweak classes with this, but keep any other attributes!
             arg("--tweakClass", "cc.polyfrost.oneconfigwrapper.OneConfigWrapper")
         }
     }
@@ -30,12 +30,13 @@ repositories {
 }
 
 dependencies {
-    compileOnly('cc.polyfrost:oneconfig-1.8.9-forge:0.1.0-alpha+') // Should not be included in jar
+<strong>    // Basic OneConfig dependencies for legacy versions. See OneConfig example mod for more info
+</strong>    compileOnly('cc.polyfrost:oneconfig-1.8.9-forge:0.1.0-alpha+') // Should not be included in jar
     // include should be replaced with a configuration that includes this in the jar
     include('cc.polyfrost:oneconfig-wrapper-launchwrapper:1.0.0-alpha+') // Should be included in jar
 }
 
-jar { // loads OneConfig at launch
+jar { // loads OneConfig at launch. Add these launch attributes but keep your old attributes!
     manifest.attributes(
             "ModSide": "CLIENT",
             "TweakOrder": "0",
@@ -43,14 +44,14 @@ jar { // loads OneConfig at launch
             "TweakClass": "cc.polyfrost.oneconfigwrapper.OneConfigWrapper",
     )
 }
-```
+</code></pre>
 {% endtab %}
 
 {% tab title="Kotlin" %}
-```kotlin
-loom {
+<pre class="language-kotlin"><code class="lang-kotlin">loom {
     launchConfigs.named("client") {
-        arg("--tweakClass", "cc.polyfrost.oneconfigwrapper.OneConfigWrapper")
+         // Loads OneConfig in dev env. Replace other tweak classes with this, but keep any other attributes!
+         arg("--tweakClass", "cc.polyfrost.oneconfigwrapper.OneConfigWrapper")
     }
 }
 
@@ -59,13 +60,14 @@ repositories {
 }
 
 dependencies {
-    compileOnly("cc.polyfrost:oneconfig-1.8.9-forge:0.1.0-alpha+") // Should not be included in jar
+<strong>    // Basic OneConfig dependencies for legacy versions. See OneConfig example mod for more info
+</strong>    compileOnly("cc.polyfrost:oneconfig-1.8.9-forge:0.1.0-alpha+") // Should not be included in jar
     // include should be replaced with a configuration that includes this in the jar
     include("cc.polyfrost:oneconfig-wrapper-launchwrapper:1.0.0-alpha+") // Should be included in jar
 }
 
 tasks {
-    jar {
+    jar { // loads OneConfig at launch. Add these launch attributes but keep your old attributes!
         manifest.attributes {
             "ModSide" to "CLIENT",
             "TweakOrder" to 0,
@@ -74,6 +76,6 @@ tasks {
         }
     }
 }
-```
+</code></pre>
 {% endtab %}
 {% endtabs %}

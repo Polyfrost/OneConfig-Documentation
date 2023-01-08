@@ -73,19 +73,11 @@ In case you weren't sure, here is an example of the download dialogue box:
 
 ### Step 4: Reloading and Building
 
-Now you have your JDKs set up, you can go ahead and close all those windows to go back to the main IDE.&#x20;
-
-Although not necessary, you can run `genSources` to decompile the game so it's easier to view. The easiest way to do this is to go to the `Gradle` tab on the right of your screen, select OneConfig, Tasks, `loom` and double click `genSources`.
-
-Now, select `ide` in the Tasks section and double click `genIntellijRuns`. This generates the run scripts for Minecraft on IntelliJ.
-
-{% hint style="info" %}
-**Note:** You might need to restart IntelliJ for the run to show up.
-{% endhint %}
+Now you have your JDKs set up, you can go ahead and close all those windows to go back to the main IDE.
 
 ### Step 5: Run Your Mod
 
-**You are now ready to run your mod for the first time!** Make sure that **Minecraft Client** is selected, and click the play button. With some luck, your game should launch.
+**You are now ready to run your mod for the first time!** Make sure that **Minecraft Client** is selected, and click the play button. Loom should have automatically installed the build configs for you, if not, try restarting IntelliJ or reimporting the Gradle project. With some luck, your game should launch.
 
 {% hint style="info" %}
 If you encounter any issues, feel free to join our [Discord server](https://polyfrost.cc/discord) and ask.
