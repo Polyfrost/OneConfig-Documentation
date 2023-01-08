@@ -17,12 +17,21 @@ If you want to avoid using our own [mod template](https://github.com/Polyfrost/O
 {% tabs %}
 {% tab title="Groovy" %}
 ```groovy
+loom {
+    launchConfigs {
+        client {
+            arg("--tweakClass", "cc.polyfrost.oneconfigwrapper.OneConfigWrapper")
+        }
+    }
+}
+
 repositories {
     maven { url 'repo.polyfrost.cc/releases' }
 }
 
 dependencies {
     compileOnly('cc.polyfrost:oneconfig-1.8.9-forge:0.1.0-alpha+') // Should not be included in jar
+    // include should be replaced with a configuration that includes this in the jar
     include('cc.polyfrost:oneconfig-wrapper-launchwrapper:1.0.0-alpha+') // Should be included in jar
 }
 
@@ -39,12 +48,19 @@ jar { // loads OneConfig at launch
 
 {% tab title="Kotlin" %}
 ```kotlin
+loom {
+    launchConfigs.named("client") {
+        arg("--tweakClass", "cc.polyfrost.oneconfigwrapper.OneConfigWrapper")
+    }
+}
+
 repositories {
     maven("repo.polyfrost.cc/releases")
 }
 
 dependencies {
     compileOnly("cc.polyfrost:oneconfig-1.8.9-forge:0.1.0-alpha+") // Should not be included in jar
+    // include should be replaced with a configuration that includes this in the jar
     include("cc.polyfrost:oneconfig-wrapper-launchwrapper:1.0.0-alpha+") // Should be included in jar
 }
 
