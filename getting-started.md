@@ -20,7 +20,7 @@ If you want to avoid using our own [mod template](https://github.com/Polyfrost/O
     launchConfigs {
         client {
             // Loads OneConfig in dev env. Replace other tweak classes with this, but keep any other attributes!
-            arg("--tweakClass", "cc.polyfrost.oneconfigwrapper.OneConfigWrapper")
+            arg("--tweakClass", "cc.polyfrost.oneconfig.loader.stage0.LaunchWrapperTweaker")
         }
     }
 }
@@ -31,9 +31,9 @@ repositories {
 
 dependencies {
 <strong>    // Basic OneConfig dependencies for legacy versions. See OneConfig example mod for more info
-</strong>    compileOnly('cc.polyfrost:oneconfig-1.8.9-forge:0.1.0-alpha+') // Should not be included in jar
+</strong>    compileOnly('cc.polyfrost:oneconfig-1.8.9-forge:0.2.0-alpha+') // Should not be included in jar
     // include should be replaced with a configuration that includes this in the jar
-    include('cc.polyfrost:oneconfig-wrapper-launchwrapper:1.0.0-alpha+') // Should be included in jar
+    include('cc.polyfrost:oneconfig-wrapper-launchwrapper:1.0.0-beta+') // Should be included in jar
 }
 
 jar { // loads OneConfig at launch. Add these launch attributes but keep your old attributes!
@@ -41,7 +41,7 @@ jar { // loads OneConfig at launch. Add these launch attributes but keep your ol
             "ModSide": "CLIENT",
             "TweakOrder": "0",
             "ForceLoadAsMod": true,
-            "TweakClass": "cc.polyfrost.oneconfigwrapper.OneConfigWrapper",
+            "TweakClass": "cc.polyfrost.oneconfig.loader.stage0.LaunchWrapperTweaker",
     )
 }
 </code></pre>
@@ -51,7 +51,7 @@ jar { // loads OneConfig at launch. Add these launch attributes but keep your ol
 <pre class="language-kotlin"><code class="lang-kotlin">loom {
     launchConfigs.named("client") {
          // Loads OneConfig in dev env. Replace other tweak classes with this, but keep any other attributes!
-         arg("--tweakClass", "cc.polyfrost.oneconfigwrapper.OneConfigWrapper")
+         arg("--tweakClass", "cc.polyfrost.oneconfig.loader.stage0.LaunchWrapperTweaker")
     }
 }
 
@@ -61,9 +61,9 @@ repositories {
 
 dependencies {
 <strong>    // Basic OneConfig dependencies for legacy versions. See OneConfig example mod for more info
-</strong>    compileOnly("cc.polyfrost:oneconfig-1.8.9-forge:0.1.0-alpha+") // Should not be included in jar
+</strong>    compileOnly("cc.polyfrost:oneconfig-1.8.9-forge:0.2.0-alpha+") // Should not be included in jar
     // include should be replaced with a configuration that includes this in the jar
-    include("cc.polyfrost:oneconfig-wrapper-launchwrapper:1.0.0-alpha+") // Should be included in jar
+    include("cc.polyfrost:oneconfig-wrapper-launchwrapper:1.0.0-beta+") // Should be included in jar
 }
 
 tasks {
@@ -72,7 +72,7 @@ tasks {
             "ModSide" to "CLIENT",
             "TweakOrder" to 0,
             "ForceLoadAsMod" to true,
-            "TweakClass" to "cc.polyfrost.oneconfigwrapper.OneConfigWrapper"
+            "TweakClass" to "cc.polyfrost.oneconfig.loader.stage0.LaunchWrapperTweaker"
         }
     }
 }
