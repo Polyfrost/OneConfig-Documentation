@@ -47,7 +47,7 @@ public void onPacketReceive(ReceivePacketEvent event) {
         // cast the packet to the right type
         S0FPacketSpawnMob packet = (S0FPacketSpawnMob) event.packet;
         // do something with it
-        System.out.println("Recieved data from server about an entity spawned with ID: " + packet.getEntityID());
+        System.out.println("Received data from server about an entity spawned with ID: " + packet.getEntityID());
     }
 }
 ```
