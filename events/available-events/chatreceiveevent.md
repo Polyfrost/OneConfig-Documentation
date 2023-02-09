@@ -1,10 +1,10 @@
 ---
-description: Learn more about ChatRecieveEvent
+description: Learn more about ChatReceiveEvent
 ---
 
-# ChatRecieveEvent
+# ChatReceiveEvent
 
-ChatRecieveEvent is an event that is fired when the client receives a chat message.
+ChatReceiveEvent is an event that is fired when the client receives a chat message.
 
 {% hint style="warning" %}
 This event is Cancellable, meaning you can stop other mods and the game itself from receiving messages. Be careful!
@@ -14,7 +14,7 @@ You can use `event.message` to get the message that was recieved as a `IChatComp
 
 ```java
 @Subscribe
-public void onChatRecieve(ChatRecieveEvent event) {
-    System.out.println("I just recieved a message! " + event.message.getUnformattedText());
+public void onChatRecieve(ChatReceiveEvent event) {
+    System.out.println("I just received a message! " + event.message.getUnformattedText());
 }
 ```
