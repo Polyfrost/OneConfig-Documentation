@@ -22,7 +22,7 @@
 
 * [Event Basics](events/event-basics.md)
 * [Available Events](events/available-events/README.md)
-  * [ChatRecieveEvent](events/available-events/chatrecieveevent.md)
+  * [ChatReceiveEvent](events/available-events/chatreceiveevent.md)
   * [TickEvent](events/available-events/tickevent.md)
   * [InitializationEvent](events/available-events/initializationevent.md)
   * [HudRenderEvent](events/available-events/hudrenderevent.md)
