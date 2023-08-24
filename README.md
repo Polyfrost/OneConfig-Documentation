@@ -6,7 +6,7 @@ Keep in mind though, that these docs aren't perfect, so if something is wrong, f
 
 ## Contributions
 
-If you encounter any errors or bugs in OneConfig, feel free to [make an issue](https://github.com/Polyfrost/OneConfig/issues) or [pull request.](https://github.com/Polyfrost/OneConfig/pulls) If you're still stuck, join our [Discord](https://polyfrost.cc/discord/) server and create a ticket!
+If you encounter any errors or bugs in OneConfig, feel free to [make an issue](https://github.com/Polyfrost/OneConfig/issues) or [pull request.](https://github.com/Polyfrost/OneConfig/pulls) If you're still stuck, join our [Discord](https://polyfrost.cc/discord) server and create a ticket!
 
 ## Licensing
 
