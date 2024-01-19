@@ -26,7 +26,7 @@ If you want to avoid using our own [mod template](https://github.com/Polyfrost/O
 }
 
 repositories {
-    maven { url 'repo.polyfrost.cc/releases' }
+    maven { url 'https://repo.polyfrost.cc/releases' }
 }
 
 dependencies {
@@ -56,7 +56,7 @@ jar { // loads OneConfig at launch. Add these launch attributes but keep your ol
 }
 
 repositories {
-    maven("repo.polyfrost.cc/releases")
+    maven("https://repo.polyfrost.cc/releases")
 }
 
 dependencies {
