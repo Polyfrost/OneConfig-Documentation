@@ -68,12 +68,12 @@ dependencies {
 
 tasks {
     jar { // loads OneConfig at launch. Add these launch attributes but keep your old attributes!
-        manifest.attributes {
+        manifest.attributes += mapOf(
             "ModSide" to "CLIENT",
             "TweakOrder" to 0,
             "ForceLoadAsMod" to true,
             "TweakClass" to "cc.polyfrost.oneconfig.loader.stage0.LaunchWrapperTweaker"
-        }
+        )
     }
 }
 </code></pre>
