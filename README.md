@@ -1,5 +1,7 @@
 # Introduction
 
+## Are you someone who knows nothing about programming and just want to use OneConfig? Check out our website [here](https://polyfrost.org/projects/oneconfig/)!
+
 Welcome to the OneConfig documentation for developers and designers. If you're confused about how to integrate your mod with OneConfig, or just what something does, there's a good chance the answer is here.
 
 Keep in mind though, that these docs aren't perfect, so if something is wrong, feel free to [fix it yourself](https://github.com/Polyfrost/OneConfig-Documentation/), before we even notice.
