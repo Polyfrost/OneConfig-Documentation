@@ -8,7 +8,7 @@ If you're unfamiliar with Java, or Minecraft Modding, please read [Modding Basic
 
 ### OneConfig's Example Mod
 
-If you're just starting out or need more advanced features like multiple versions, we highly recommend looking at our updatdd [example mod](https://github.com/Polyfrost/OneConfigExampleMod/).
+If you're just starting out or need more advanced features like multiple versions, we highly recommend looking at our updated [example mod](https://github.com/Polyfrost/OneConfigExampleMod/).
 
 ## Including OneConfig Yourself
 
