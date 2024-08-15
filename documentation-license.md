@@ -1,14 +1,12 @@
----
-description: GNU Free Documentation License version 1.3
----
-
 # Documentation License
+
+GNU Free Documentation License version 1.3
 
 Below you can find a copy of the license and its terms for this documentation:
 
 ```
-Copyright (C) 2022 Polyfrost. All Rights Reserved. 
-   <https://polyfrost.cc/> <https://github.com/Polyfrost>
+Copyright (C) 2024 Polyfrost. All Rights Reserved. 
+   <https://polyfrost.org/> <https://github.com/Polyfrost>
 The OneConfig Developer Documentation is licensed under the terms of 
 GNU Free Documentation License, Version 1.3, or (at your option) 
 any later version published by the Free Software Foundation; with 
