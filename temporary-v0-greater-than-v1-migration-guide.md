@@ -8,7 +8,7 @@ OneConfig V1 is now available to all developers, with some conditions:
 
 This guide assumes you use (Essential/Polyfrost) (Arch)Loom 1.6 or higher, with a Kotlin Gradlescript. If you're on an older version, such as 0.10, some method names from Loom will be different.
 
-
+This is in **NO WAY** a complete guide as of yet. [**PLEASE** contribute to this guide](https://github.com/Polyfrost/OneConfig-Documentation/tree/v1) if you find any discrepancies.&#x20;
 
 ## Get it working in Gradle
 
@@ -49,7 +49,7 @@ You should now see the new API and be able to launch in dev env.
 
 ## Notable changes
 
-This is in **NO WAY** a complete guide as of yet. **PLEASE** contribute to this guide if you find any discrepancies.&#x20;
+This is in **NO WAY** a complete guide as of yet. [**PLEASE** contribute to this guide](https://github.com/Polyfrost/OneConfig-Documentation/tree/v1) if you find any discrepancies.&#x20;
 
 ### New
 
