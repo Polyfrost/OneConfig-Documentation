@@ -26,7 +26,7 @@ Below are screenshots of the new GUI. Yes, they are technically concept designs,
 
 Add this to build.gradle.kts. These blocks will most definitely exist already in your buildscript, so follow the comments well.
 
-```kts
+```kotlin
 loom {
     if (project.platform.isLegacyForge) {
         runConfigs { // This is `launchConfigs` in Loom 0.10
@@ -260,7 +260,7 @@ class Combo : TextHud(prefix = "Combo:", suffix = "blocks") {
 
 ### Working PolyUI example
 
-```
+```kotlin
 package org.polyfrost.crashpatch.gui
 
 import net.minecraft.client.gui.GuiScreen
