@@ -65,9 +65,12 @@ This is in **NO WAY** a complete guide as of yet. [**PLEASE** contribute to this
 
 ### New
 
-```
-Now split into multiple, non-Minecraft dependant modules, and one Minecraft module
-Uses PolyUI
+<pre><code>Now split into multiple, non-Minecraft dependant modules, and one Minecraft module
+<strong>Uses PolyUI
+</strong><strong>  - Extremely optimized UI lib, using NanoVG
+</strong><strong>  - "Render what you need ONLY WHEN you need it"
+</strong><strong>    - Performance boost as a result of this
+</strong>  - As a result, theming support is automatic and will be implemented soon
 Official upport for Legacy Fabric and modern MC (Forge, Fabric, and soon NeoForge)
 Commands can now be created via `CommandBuilder`, a Brigadier-style builder.
 Complete rewrite of config system
@@ -81,7 +84,7 @@ Complete rewrite of HUD system
   - As explained, you can use `LegacyHud` to just render like in V0. But we STRONGLY recommend using the new PolyUI-based APIs
 Keybind rewrite
   - TODO!!!!!
-```
+</code></pre>
 
 ### Package changes
 
