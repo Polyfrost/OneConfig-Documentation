@@ -56,6 +56,7 @@ This is in **NO WAY** a complete guide as of yet. [**PLEASE** contribute to this
 ```
 Now split into multiple, non-Minecraft dependant modules, and one Minecraft module
 Uses PolyUI
+Official upport for Legacy Fabric and modern MC (Forge, Fabric, and soon NeoForge)
 Commands can now be created via `CommandBuilder`, a Brigadier-style builder.
 Complete rewrite of config system
   -https://github.com/Polyfrost/OneConfig/tree/v1/modules/config#oneconfig-config
