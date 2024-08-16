@@ -6,7 +6,7 @@ OneConfig V1 is now available to all developers, with some conditions:
 * Currently, V1 will not work on modern versions due to an issue with LWJGL natives. But it compiles!
 * Expect bugs with OneConfig V1 itself.
 
-This guide assumes you use (Essential/Polyfrost) (Arch)Loom 1.6 or higher, with a Kotlin buildscript and either Essential Gradle Toolkit or Polyfrost Gradle Toolkit. If you're on an older version, such as 0.10, some method names from Loom will be different.
+This guide assumes you use (Essential/Polyfrost) Loom 1.6 or higher, with a Kotlin buildscript and either Essential Gradle Toolkit or Polyfrost Gradle Toolkit. If you're on an older version, such as 0.10, some method names from Loom will be different.
 
 This is in **NO WAY** a complete guide as of yet. [**PLEASE** contribute to this guide](https://github.com/Polyfrost/OneConfig-Documentation/tree/v1) if you find any discrepancies.&#x20;
 
