@@ -10,6 +10,18 @@ This guide assumes you use (Essential/Polyfrost) (Arch)Loom 1.6 or higher, with 
 
 This is in **NO WAY** a complete guide as of yet. [**PLEASE** contribute to this guide](https://github.com/Polyfrost/OneConfig-Documentation/tree/v1) if you find any discrepancies.&#x20;
 
+Below are screenshots of the new GUI. Yes, they are technically concept designs, but it's basically been implemented 1:1 and I'm way too lazy to take actual screenshots lol
+
+<figure><img src=".gitbook/assets/image.png" alt="" width="563"><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (2).png" alt="" width="563"><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (3).png" alt="" width="563"><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (4).png" alt="" width="563"><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (5).png" alt="" width="563"><figcaption></figcaption></figure>
+
 ## Get it working in Gradle
 
 Add this to build.gradle.kts. These blocks will most definitely exist already in your buildscript, so follow the comments well.
