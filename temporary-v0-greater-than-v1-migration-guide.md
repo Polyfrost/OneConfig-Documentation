@@ -148,6 +148,8 @@ ArgumentParser.complete -> getAutoCompletions
 - addListener -> addCallback
 </code></pre>
 
+## Examples
+
 ### Working HUD example
 
 ```kotlin
@@ -257,8 +259,6 @@ class Combo : TextHud(prefix = "Combo:", suffix = "blocks") {
     override fun updateFrequency() = -1L
 }
 ```
-
-### Working PolyUI example
 
 ```kotlin
 package org.polyfrost.crashpatch.gui
