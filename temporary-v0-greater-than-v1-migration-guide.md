@@ -130,8 +130,9 @@ RenderTickDelay -> EventDelay.render
 </strong>CommandManager.INSTANCE.addParser -> CommandManager.INSTANCE.registerParser
 @Command `aliases` field -> `value`
 - it is now an array, you pass the main one as the first and the rest as aliases
-<strong>Notifications.INSTANCE.send -> Notifications.INSTANCE.enqueue
+<strong>Notifications.INSTANCE.send -> NotificationsManager.INSTANCE.enqueue
 </strong><strong>- You now need to provide a notification "type"
+</strong><strong>- We'll probably rename the class back to Notifications depending on how things go
 </strong>Multithreading.runAsync -> Multithreading.submit
 ConfigUtils.getProfileFile -> ConfigManager.active().getFolder().resolve
 - Returns a Path instead of a File
