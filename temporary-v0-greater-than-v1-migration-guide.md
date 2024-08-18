@@ -261,6 +261,8 @@ class Combo : TextHud(prefix = "Combo:", suffix = "blocks") {
 }
 ```
 
+### Working PolyUI GUI example
+
 ```kotlin
 package org.polyfrost.crashpatch.gui
 
