@@ -21,7 +21,15 @@ layout:
 
 ## Are you someone who knows nothing about programming and just wants to use OneConfig? Check out our website [here](https://polyfrost.org/projects/oneconfig/)!
 
+&#x20;
 
+Welcome to the OneConfig documentation for developers. If you're confused about how to integrate your mod with OneConfig, or just what something does, there's a good chance the answer is here.
+
+Keep in mind though, that these docs aren't perfect, so if something is wrong, feel free to [fix it yourself](https://github.com/Polyfrost/OneConfig-Documentation/), before we even notice.
+
+## Contributions
+
+If you encounter any errors or bugs in OneConfig, feel free to [make an issue](https://github.com/Polyfrost/OneConfig/issues) or [pull request.](https://github.com/Polyfrost/OneConfig/pulls) If you're still stuck, join our [Discord](https://polyfrost.org/discord) server and create a ticket!
 
 ## Licensing
 
