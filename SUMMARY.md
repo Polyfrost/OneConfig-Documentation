@@ -46,6 +46,8 @@
 * [Hypixel Utilities](utilities-module/hypixel-utilities.md)
 * [IO Utilities](utilities-module/io-utilities.md)
 * [Networking Utilities](utilities-module/networking-utilities.md)
+* [JSON Utilities](utilities-module/json-utilities.md)
+* [Multithreading](utilities-module/multithreading.md)
 
 ## Migration
 
