@@ -74,6 +74,7 @@ cc.polyfrost.oneconfig.config -> org.polyfrost.oneconfig.api.config.v1
 @Description -> @Parameter
 @Greedy -> `greedy` field in @Command annotation
 OneColor -> PolyColor
+@VigilanceName (or any other migrator name -> @PreviousName (check javadocs for new syntax)
 new OneColor(value) -> ColorUtils.rgba(value)
 NetworkUtils.getJsonElement -> JsonUtils.parseFromUrl
 JsonUtils.parseString -> `parse` or `parseOrNull`
@@ -90,7 +91,8 @@ RenderTickDelay -> EventDelay.render
 
 ### Misc
 
-<pre><code><strong>CommandManager.INSTANCE.registerCommand -> CommandManager.registerCommand
+<pre><code>new VigilanceMigrator (or any other migrator) -> `loadFrom` method in config.
+<strong>CommandManager.INSTANCE.registerCommand -> CommandManager.registerCommand
 </strong>CommandManager.INSTANCE.addParser -> CommandManager.INSTANCE.registerParser
 @Command `aliases` field -> `value`
 - it is now an array, you pass the main one as the first and the rest as aliases
