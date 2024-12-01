@@ -16,10 +16,16 @@ public class ExampleConfig extends Config {
 
 {% tab title="Kotlin" %}
 ```kotlin
-object ExampleConfig : Config() // This is an object so we can easily access a singleton instance of the config. Refer to later section for more info
+object ExampleConfig : KtConfig() // This is an object so we can easily access a singleton instance of the config. Refer to later section for more info
 ```
 {% endtab %}
 {% endtabs %}
+
+{% hint style="info" %}
+### Why do we use KtConfig for the Kotlin example?
+
+KtConfig provides additional functionality which makes it easier to create type-safe options in Kotlin with a much more readable and serviceable syntax.
+{% endhint %}
 
 Easy, right? Now, you'll need to provide it with some info via it's **constructor**, which takes your config's name, category, file name and some other relating data.
 
@@ -43,11 +49,11 @@ public class ExampleConfig extends Config {
 
 {% tab title="Kotlin" %}
 ```kotlin
-object ExampleConfig : Config(
-     "example_config.json",                // Your mod's config file's name and extension
-     "/assets/examplemod/example_mod.png", // A path to a PNG or SVG file, used as your mod's icon in OneConfig's UI
-     "Example Mod",                        // Your mod's name was it is shown in OneConfig's UI
-     Category.QOL                          // The category your mod will be sorted in within OneConfig's UI
+object ExampleConfig : KtConfig(
+     id = "example_config.json",                  // Your mod's config file's name and extension
+     icon = "/assets/examplemod/example_mod.png", // A path to a PNG or SVG file, used as your mod's icon in OneConfig's UI
+     title = "Example Mod",                       // Your mod's name was it is shown in OneConfig's UI
+     category = Config.Category.QOL               // The category your mod will be sorted in within OneConfig's UI
 )
 ```
 {% endtab %}
@@ -75,7 +81,7 @@ public class ExampleConfig extends Config {
 If you are on **Kotlin** and you have not already, make your config class an `object`. This makes your class a singleton, which essentially will create the `INSTANCE` field in Java for you, and make accessing it via Kotlin syntax easier.
 
 ```kotlin
-object ExampleConfig : Config(
+object ExampleConfig : KtConfig(
      // Your constructor stuff here...
 )
 ```

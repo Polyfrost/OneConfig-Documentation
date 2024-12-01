@@ -9,7 +9,26 @@
 
 ## Configuration
 
-* [Creating Your Config](configuration/creating-your-config.md)
+* [Creating Your Config](configuration/creating-your-config/README.md)
+  * [Option Dependencies & Hiding Options](configuration/creating-your-config/option-dependencies-and-hiding-options.md)
+  * [Listening For Option Changes](configuration/creating-your-config/listening-for-option-changes.md)
+* [Available Options](configuration/available-options/README.md)
+  * [Boolean Options](configuration/available-options/boolean-options/README.md)
+    * [Switch Option](configuration/available-options/boolean-options/switch-option.md)
+    * [Checkbox Option](configuration/available-options/boolean-options/checkbox-option.md)
+  * [Number Options](configuration/available-options/number-options/README.md)
+    * [Slider Option](configuration/available-options/number-options/slider-option.md)
+    * [Number Option](configuration/available-options/number-options/number-option.md)
+  * [Selector Options](configuration/available-options/selector-options/README.md)
+    * [Dropdown Option](configuration/available-options/selector-options/dropdown-option.md)
+    * [Radio Button Option](configuration/available-options/selector-options/radio-button-option.md)
+  * [Text Option](configuration/available-options/text-option.md)
+  * [Color Option](configuration/available-options/color-option.md)
+  * [Keybind Option](configuration/available-options/keybind-option.md)
+  * [Buttons](configuration/available-options/buttons.md)
+  * [Accordions](configuration/available-options/accordions.md)
+  * [Decorations](configuration/available-options/decorations.md)
+* [Creating Your Own Options](configuration/creating-your-own-options.md)
 
 ## Commands
 
