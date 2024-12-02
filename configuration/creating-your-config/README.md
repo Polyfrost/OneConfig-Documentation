@@ -41,7 +41,7 @@ public class ExampleConfig extends Config {
               "/assets/examplemod/example_mod.png", // A path to a PNG or SVG file, used as your mod's icon in OneConfig's UI
               "Example Mod",                        // Your mod's name was it is shown in OneConfig's UI
               Category.QOL                          // The category your mod will be sorted in within OneConfig's UI
-         );   
+         );
     }
 }
 ```

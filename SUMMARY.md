@@ -52,3 +52,4 @@
 ## Migration
 
 * [Temporary V0->V1 Migration Guide](migration/temporary-v0-greater-than-v1-migration-guide.md)
+* [Migrating your configs from Vigilance](migration/migrating-your-configs-from-vigilance.md)
