@@ -35,4 +35,4 @@ If you encounter any errors or bugs in OneConfig, feel free to [make an issue](h
 
 The OneConfig Docs are licensed under the GNU Free Documentation License, version 1.3 or later.
 
-Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.3, or any later version published by the Free Software Foundation; with the Invariant Sections just being "Welcome" with no Front-Cover Texts, and no Back-Cover Texts. A copy of the license is included in the section entitled "[Documentation License](documentation-license.md)".
+Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.3, or any later version published by the Free Software Foundation; with the Invariant Sections just being "Welcome" with no Front-Cover Texts, and no Back-Cover Texts. A copy of the license is included in the section entitled "[Documentation license](documentation-license.md)".

@@ -1,4 +1,4 @@
-# Documentation License
+# Documentation license
 
 GNU Free Documentation License version 1.3
 
@@ -10,7 +10,7 @@ Copyright (C) 2024 Polyfrost. All Rights Reserved.
 The OneConfig Developer Documentation is licensed under the terms of 
 GNU Free Documentation License, Version 1.3, or (at your option) 
 any later version published by the Free Software Foundation; with 
-the Invariant Sections just being "Introduction" with no Front-Cover 
+the Invariant Sections just being "Welcome" with no Front-Cover 
 Texts, and no Back-Cover Texts.
 
                 GNU Free Documentation License
