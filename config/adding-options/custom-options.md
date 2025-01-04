@@ -39,7 +39,7 @@ public static boolean yes = true;
 Then too add your option to the config system you have to overwrite the `getCustomOption` method in the config, add the option to the page using `ConfigUtils` and then return the option. Here is an example implementation:
 
 ```java
-@Overwrite
+@Override
 protected BasicOption getCustomOption(Field field, CustomOption annotation, OptionPage page, Mod mod, boolean migrate) {
     BasicOption option = null;
     switch (annotation.id()) {
@@ -75,7 +75,7 @@ public @interface MyOptionAnnotation {
 Then to implement this you have to modify your `getCustomOption` a bit.
 
 ```java
-@Overwrite
+@Override
 protected BasicOption getCustomOption(Field field, CustomOption annotation, OptionPage page, Mod mod, boolean migrate) {
     BasicOption option = null;
     switch (annotation.id()) {
