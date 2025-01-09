@@ -48,6 +48,7 @@
 * [Networking utilities](utilities-module/networking-utilities.md)
 * [JSON utilities](utilities-module/json-utilities.md)
 * [Multithreading](utilities-module/multithreading.md)
+* [Platform-specific utilities](utilities-module/platform-specific-utilities.md)
 
 ## Migration
 
