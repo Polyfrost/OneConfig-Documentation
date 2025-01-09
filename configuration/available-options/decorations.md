@@ -8,7 +8,7 @@
 @Info(
     title = "My Info Block",
     description = "This is my info block", // Recommended, default = ""
-    icon = "/my_info.svg", // Optional, default = ""
+    icon = "/my_info.svg", // Optional, default = "". Please refer to Notifications.Type to see default types
     category = "Decorations", // Recommended, default = "General"
     subcategory = "General" // Recommended, default = "General"
 )
@@ -21,7 +21,7 @@ private void info1() {} // Can be anything, methods are just easiest to write.
 @Info(
     title = "My Info Block",
     description = "This is my info block", // Recommended, default = ""
-    icon = "/my_info.svg", // Optional, default = ""
+    icon = "/my_info.svg", // Optional, default = "". Please refer to Notifications.Type to see default types
     category = "Decorations", // Recommended, default = "General"
     subcategory = "General" // Recommended, default = "General"
 )
