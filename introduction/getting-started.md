@@ -51,7 +51,7 @@ OneConfig's functionality is split into several modules for ease of use and to i
 ```kts
 toolkitLoomHelper {
     useOneConfig {
-        version = "1.0.0-alpha.49" // Put whatever the latest is here
+        version = "1.0.0-alpha.55" // Put whatever the latest is here
         loaderVersion = "1.1.0-alpha.35" // Put whatever the latest is here
 
         usePolyMixin = true // If you want to use Mixin on Legacy Forge, you need PolyMixin
@@ -59,7 +59,7 @@ toolkitLoomHelper {
 
         applyLoaderTweaker = true // Set this to false if you want to use a custom tweaker.
 
-        for (module in arrayOf("commands", "events", "ui")) {
+        for (module in arrayOf("commands", "config-impl", "events", "hud", "internal", "ui", "utils")) {
             +module
         }
     }
@@ -89,8 +89,8 @@ dependencies {
     // Basic OneConfig dependencies for legacy versions. See OneConfig example mod for more info
     val oneConfigMcVersion = "1.8.9"
     val oneConfigModLoader = "forge"
-    val oneConfigModules = arrayOf("commands", "events", "ui") // Refer to possible modules above
-    val oneconfigVersion = "1.0.0-alpha.49" // Put whatever the latest is here
+    val oneConfigModules = arrayOf("commands", "config-impl", "events", "hud", "internal", "ui", "utils") // Refer to possible modules above
+    val oneconfigVersion = "1.0.0-alpha.55" // Put whatever the latest is here
     for (module in oneConfigModules) {
         if (platform.isLegacyForge) {
             compileOnly("org.polyfrost.oneconfig:$module:$oneConfigVersion") // Should NOT be included in JAR
@@ -130,7 +130,7 @@ tasks {
 {% tab title="Groovy (DGT)" %}
 <pre class="language-gradle"><code class="lang-gradle"><strong>toolkitLoomHelper {
 </strong>    useOneConfig {
-        version = "1.0.0-alpha.49" // Put whatever the latest is here
+        version = "1.0.0-alpha.55" // Put whatever the latest is here
         loaderVersion = "1.1.0-alpha.35" // Put whatever the latest is here
 
         usePolyMixin = true // If you want to use Mixin on Legacy Forge, you need PolyMixin
@@ -138,7 +138,7 @@ tasks {
 
         applyLoaderTweaker = true // Set this to false if you want to use a custom tweaker.
 
-        for (String module : ["commands", "events", "ui"]) {
+        for (String module : ["commands", "config-impl", "events", "hud", "internal", "ui", "utils"]) {
             addModule(module)
         }
     }
@@ -170,8 +170,8 @@ dependencies {
     // Basic OneConfig dependencies for legacy versions. See OneConfig example mod for more info
     def oneConfigMcVersion = "1.8.9"
     def oneConfigModLoader = "forge"
-    def oneConfigModules = ["commands", "events", "ui"] // Refer to possible modules above
-    def oneconfigVersion = "1.0.0-alpha.49" // Put whatever the latest is here
+    def oneConfigModules = ["commands", "config-impl", "events", "hud", "internal", "ui", "utils"] // Refer to possible modules above
+    def oneconfigVersion = "1.0.0-alpha.55" // Put whatever the latest is here
     for (String module : oneConfigModules) {
         if (platform.isLegacyForge) {
             compileOnly('org.polyfrost.oneconfig:${module}:${oneConfigVersion}') // Should NOT be included in JAR
