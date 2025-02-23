@@ -18,11 +18,11 @@ This event is cancellable, meaning you can stop the packet from getting into the
 @Subscribe
 public void onPacketSend(SendPacketEvent event) {
     // check if the packet is the right type
-    if(event.packet instanceof S0FPacketSpawnMob) {
+    if(event.packet instanceof C14PacketTabComplete) {
         // cast the packet to the right type
-        S0FPacketSpawnMob packet = (S0FPacketSpawnMob) event.packet;
+        C14PacketTabComplete packet = (C14PacketTabComplete) event.packet;
         // do something with it
-        System.out.println("Entity attempted to be spawned with ID: " + packet.getEntityID());
+        System.out.println("Attempted to send a tab complete packet with message:" + packet.getMessage());
         // cancel the event afterwards, rendering this packet useless.
         event.isCancelled = true;
     }
