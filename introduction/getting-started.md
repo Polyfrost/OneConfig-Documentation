@@ -18,6 +18,10 @@ For NeoForge: [https://docs.neoforged.net/docs/gettingstarted/](https://docs.neo
 From there, instead of using the default templates of those loaders, you would use the [OneConfigExampleMod](https://github.com/Polyfrost/OneConfigExampleMod).
 {% endhint %}
 
+## Latest versions
+
+<div><figure><img src="https://repo.polyfrost.org/api/badge/latest/snapshots/org/polyfrost/oneconfig/1.8.9-forge?color=1452cc&#x26;name=OneConfig" alt=""><figcaption></figcaption></figure> <figure><img src="https://repo.polyfrost.org/api/badge/latest/snapshots/org/polyfrost/oneconfig/stage0?color=1452cc&#x26;name=Loader%20(for%20Legacy%20Forge)" alt=""><figcaption></figcaption></figure></div>
+
 ## OneConfig Example Mod
 
 If you're just starting out or need more advanced features like multiple versions, we highly recommend looking at our [example mod](https://github.com/Polyfrost/OneConfigExampleMod/). When cloning the example mod, please choose from one of the following branches:
