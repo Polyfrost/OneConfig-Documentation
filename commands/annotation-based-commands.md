@@ -50,7 +50,7 @@ From here, you can add your main execution point! This method is executed when t
 @Command({"examplemod", "example", "example_mod"})
 public class ExampleCommand {
 
-    @Command
+    @Handler
     public void main() {
         System.out.println("Hello, OneConfig!");    
     }
@@ -64,7 +64,7 @@ public class ExampleCommand {
 @Command(arrayOf("examplemod", "example", "example_mod"))
 class ExampleCommand {
 
-    @Command
+    @Handler
     fun main() {
         println("Hello, OneConfig!");    
     }
@@ -88,7 +88,7 @@ Let's say we want to take in a name to greet someone in the console. We'd need t
 @Command({"examplemod", "example", "example_mod"})
 public class ExampleCommand {
 
-    @Command
+    @Handler
     public void main(@Parameter("Name") @NotNull String name) {
         System.out.println("Hello, " + name + "!");    
     }
@@ -102,7 +102,7 @@ public class ExampleCommand {
 @Command(arrayOf("examplemod", "example", "example_mod"))
 class ExampleCommand {
 
-    @Command
+    @Handler
     fun main(@Parameter("Name") name: String) {
         println("Hello, $name!");    
     }
@@ -222,7 +222,7 @@ When you've got multiple functions under a single base command name, you're goin
 @Command({"examplemod", "example", "example_mod"})
 public class ExampleCommand {
 
-    @Command({"greet", "grt"})
+    @Handler({"greet", "grt"})
     public void greet(@Parameter("Name") @NotNull String name) {
         System.out.println("Hello, " + name + "!");    
     }
@@ -236,7 +236,7 @@ public class ExampleCommand {
 @Command(arrayOf("examplemod", "example", "example_mod"))
 class ExampleCommand {
 
-    @Command(arrayOf("greet", "grt"))
+    @Handler(arrayOf("greet", "grt"))
     fun greet(@Parameter("Name") name: String) {
         println("Hello, $name!");
     }
