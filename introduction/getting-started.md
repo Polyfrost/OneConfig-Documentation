@@ -55,8 +55,8 @@ OneConfig's functionality is split into several modules for ease of use and to i
 ```kts
 toolkitLoomHelper {
     useOneConfig {
-        version = "1.0.0-alpha.55" // Put whatever the latest is here
-        loaderVersion = "1.1.0-alpha.35" // Put whatever the latest is here
+        version = "1.0.0-alpha.XXX" // Put whatever the latest is here
+        loaderVersion = "1.1.0-alpha.XX" // Put whatever the latest is here
 
         usePolyMixin = true // If you want to use Mixin on Legacy Forge, you need PolyMixin
         polyMixinVersion = "0.8.4+build.2" // If you want to use Mixin on Legacy Forge, you need PolyMixin
@@ -94,7 +94,7 @@ dependencies {
     val oneConfigMcVersion = "1.8.9"
     val oneConfigModLoader = "forge"
     val oneConfigModules = arrayOf("commands", "config-impl", "events", "hud", "internal", "ui", "utils") // Refer to possible modules above
-    val oneconfigVersion = "1.0.0-alpha.55" // Put whatever the latest is here
+    val oneconfigVersion = "1.0.0-alpha.XXX" // Put whatever the latest is here
     for (module in oneConfigModules) {
         if (platform.isLegacyForge) {
             compileOnly("org.polyfrost.oneconfig:$module:$oneConfigVersion") // Should NOT be included in JAR
@@ -105,7 +105,7 @@ dependencies {
     
     if (platform.isLegacyForge) {
         val loaderModule = "launchwrapper"
-        val loaderVersion = "1.1.0-alpha.35" // Put whatever the latest is here
+        val loaderVersion = "1.1.0-alpha.XX" // Put whatever the latest is here
         include("org.polyfrost.oneconfig:stage0:$loaderModule:$loaderVersion") // Should be included in JAR
         
         modCompileOnly("org.polyfrost.oneconfig:$oneConfigMcVersion-$oneConfigModLoader:$oneConfigVersion")
@@ -134,8 +134,8 @@ tasks {
 {% tab title="Groovy (DGT)" %}
 <pre class="language-gradle"><code class="lang-gradle"><strong>toolkitLoomHelper {
 </strong>    useOneConfig {
-        version = "1.0.0-alpha.55" // Put whatever the latest is here
-        loaderVersion = "1.1.0-alpha.35" // Put whatever the latest is here
+        version = "1.0.0-alpha.XXX" // Put whatever the latest is here
+        loaderVersion = "1.1.0-alpha.XX" // Put whatever the latest is here
 
         usePolyMixin = true // If you want to use Mixin on Legacy Forge, you need PolyMixin
         polyMixinVersion = "0.8.4+build.2" // If you want to use Mixin on Legacy Forge, you need PolyMixin
@@ -175,7 +175,7 @@ dependencies {
     def oneConfigMcVersion = "1.8.9"
     def oneConfigModLoader = "forge"
     def oneConfigModules = ["commands", "config-impl", "events", "hud", "internal", "ui", "utils"] // Refer to possible modules above
-    def oneconfigVersion = "1.0.0-alpha.55" // Put whatever the latest is here
+    def oneconfigVersion = "1.0.0-alpha.XXX" // Put whatever the latest is here
     for (String module : oneConfigModules) {
         if (platform.isLegacyForge) {
             compileOnly('org.polyfrost.oneconfig:${module}:${oneConfigVersion}') // Should NOT be included in JAR
@@ -186,7 +186,7 @@ dependencies {
     
     if (platform.isLegacyForge) {
         def loaderModule = "launchwrapper"
-        def loaderVersion = "1.1.0-alpha.35" // Put whatever the latest is here
+        def loaderVersion = "1.1.0-alpha.XX" // Put whatever the latest is here
         include('org.polyfrost.oneconfig:stage0:$loaderModule:$loaderVersion') // Should be included in JAR
         
         modCompileOnly('org.polyfrost.oneconfig:${oneConfigMcVersion}-${oneConfigModLoader}:${oneConfigVersion}')

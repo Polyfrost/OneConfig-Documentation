@@ -1,9 +1,8 @@
-# Temporary V0->V1 Migration Guide
+# Temporary V0 -> V1 migration guide
 
 OneConfig V1 is now available to all developers, with some conditions:
 
 * Not everything has been documented just yet...
-* Currently, V1 will not work on modern versions due to an issue with LWJGL natives. But it compiles!
 * Expect bugs with OneConfig V1 itself.
 
 This is in **NO WAY** a complete guide as of yet. [**PLEASE** contribute to this guide](https://github.com/Polyfrost/OneConfig-Documentation/tree/v1) if you find any discrepancies.&#x20;
@@ -36,7 +35,7 @@ This is in **NO WAY** a complete guide as of yet. [**PLEASE** contribute to this
 </strong><strong>  - "Render what you need ONLY WHEN you need it"
 </strong><strong>    - Performance boost as a result of this
 </strong>  - As a result, theming support is automatic and will be implemented soon
-Official support for Legacy Fabric and modern MC (Forge, Fabric, and soon NeoForge)
+Official support for Legacy Fabric and modern MC (Forge, Fabric, NeoForge)
 Commands can now be created via `CommandBuilder`, a Brigadier-style builder.
 Complete rewrite of config system
   -https://github.com/Polyfrost/OneConfig/tree/v1/modules/config#oneconfig-config
@@ -48,6 +47,7 @@ Complete rewrite of HUD system
   - https://github.com/Polyfrost/OneConfig/tree/v1/modules/hud#oneconfig-hud
   - As explained, you can use `LegacyHud` to just render like in V0. But we STRONGLY recommend using the new PolyUI-based APIs
 <strong>Keybind rewrite
+</strong><strong>Uses OmniCore instead of UniversalCraft
 </strong></code></pre>
 
 ### Package changes
@@ -56,7 +56,7 @@ You should be able to do a find and replace with `import <old package name>` . G
 
 ```
 cc.polyfrost -> org.polyfrost
-cc.polyfrost.libs.universal -> org.polyfrost.universal
+cc.polyfrost.libs.universal -> replaced by OmniCore
 cc.polyfrost.oneconfig.events -> org.polyfrost.oneconfig.api.event.v1.events
 cc.polyfrost.oneconfig.platform -> org.polyfrost.oneconfig.api.platform.v1
 cc.polyfrost.oneconfig.utils -> org.polyfrost.oneconfig.utils.v1
@@ -129,8 +129,8 @@ We recommend checking out our mods, which have somewhat already been ported to V
 - REDACTION [V1 DONE]
 - PolySprint [V1 DONE]
 - BehindYouV3 [V1 ½ done]
-- PolyCrosshair [V1 __not__ done]
-- OverflowParticles [V1 __not__ done]
+- PolyCrosshair [V1 1/2 done]
+- OverflowParticles [V1 DONE]
 
 - EvergreenHUD [V1 ½ done]
 - PolyHitbox [V1 __not__ done]
