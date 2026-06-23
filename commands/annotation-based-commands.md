@@ -13,7 +13,7 @@ In order to create a command, you need to annotate a class with the `@Command` a
 
 {% tab title="Kotlin" %}
 ```kotlin
-@Command(arrayOf("examplemod", "example", "example_mod"))
+@Command(["examplemod", "example", "example_mod"])
 ```
 {% endtab %}
 {% endtabs %}
@@ -35,7 +35,7 @@ public class ExampleCommand {
 
 {% tab title="Kotlin" %}
 ```kotlin
-@Command(arrayOf("examplemod", "example", "example_mod"))
+@Command(["examplemod", "example", "example_mod"])
 class ExampleCommand {
 }
 ```
@@ -61,7 +61,7 @@ public class ExampleCommand {
 
 {% tab title="Kotlin" %}
 ```kotlin
-@Command(arrayOf("examplemod", "example", "example_mod"))
+@Command(["examplemod", "example", "example_mod"])
 class ExampleCommand {
 
     @Handler
@@ -99,7 +99,7 @@ public class ExampleCommand {
 
 {% tab title="Kotlin" %}
 ```kotlin
-@Command(arrayOf("examplemod", "example", "example_mod"))
+@Command(["examplemod", "example", "example_mod"])
 class ExampleCommand {
 
     @Handler
@@ -182,7 +182,7 @@ class ExampleEnumArgumentParser : ArgumentParser<ExampleEnum>() {
         
         val result = mutableListOf<String>()
         for (value in ExampleEnum.values()) {
-            String name = value.name().toLowerCase(Locale.US)
+            val name = value.name().toLowerCase(Locale.US)
             if (!name.startsWith(arg.toLowerCase(Locale.US))) {
                 continue
             }
@@ -194,7 +194,7 @@ class ExampleEnumArgumentParser : ArgumentParser<ExampleEnum>() {
     }
     
     override fun getType(): Class<ExampleEnum> {
-        return ExampleEnum::class.java;
+        return ExampleEnum::class.java
     }
     
 }
@@ -233,10 +233,10 @@ public class ExampleCommand {
 
 {% tab title="Kotlin" %}
 ```kotlin
-@Command(arrayOf("examplemod", "example", "example_mod"))
+@Command(["examplemod", "example", "example_mod"])
 class ExampleCommand {
 
-    @Handler(arrayOf("greet", "grt"))
+    @Handler(["greet", "grt"])
     fun greet(@Parameter("Name") name: String) {
         println("Hello, $name!");
     }

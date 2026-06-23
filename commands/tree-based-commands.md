@@ -1,56 +1,63 @@
 # Tree-based Commands
 
-To get started with OneConfig's tree-based ([Brigadier](https://github.com/Mojang/Brigadier)-style) command system, you'll need to get started by creating a `CommandBuilder:`
+OneConfig uses the Minecraft command system ([Brigadier](https://github.com/Mojang/Brigadier)) for non annotation based commands, however it provides some utility functions.
+
+You can create a simple command like the following.
 
 {% tabs %}
 {% tab title="Java" %}
 ```java
-CommandBuilder builder = CommandBuilder.command("examplemod", "example", "example_mod");
+var builder = CommandManager.literal("examplemod");
 ```
 {% endtab %}
 
 {% tab title="Kotlin" %}
 ```kotlin
-val builder = CommandBuilder.command("examplemod", "example", "example_mod")
+val builder = CommandManager.literal("examplemod")
 ```
 {% endtab %}
 {% endtabs %}
 
-From here, if you want to do something when the command is run on it's own (f.ex `/examplemod`), you can use the `runs` method to define what is executed, like so:
+From here, if you want to do something when the command is run on it's own (f.ex `/examplemod`), you can use the `executes` method to define what is executed, like so:
 
 {% tabs %}
 {% tab title="Java" %}
 ```java
-builder.then(CommandBuilder.runs().does(() -> {
-    System.out.println("Hello, OneConfig!");
-}));
+builder.executes(ctx -> {
+    System.out.println("Hello, OneConfig!"); 
+    
+    return Command.SINGLE_SUCCESS;
+});
 ```
 {% endtab %}
 
 {% tab title="Kotlin" %}
 ```kotlin
-builder.then(CommandBuilder.runs().does {
+builder.executes { ctx ->
     println("Hello, OneConfig!")
-})
+    
+    Command.SINGLE_SUCCESS
+}
 ```
 {% endtab %}
 {% endtabs %}
 
-Both the object which `command` and `runs` returns have a `description` method which allow you to describe what happens when you execute that command or subcommand, it is recommended to use this where possible.
-
-Finally, to register your command, you can simply use `CommandManager#registerCommand` like so:
+Finally, to register your command, you can simply use `CommandManager.register` like so:
 
 {% tabs %}
 {% tab title="Java" %}
 ```java
-CommandManager.registerCommand(builder.build());
+CommandManager.register(builder);
 ```
 {% endtab %}
 
 {% tab title="Kotlin" %}
 ```kotlin
-CommandManager.registerCommand(builder.build())
+CommandManager.register(builder)
 ```
 {% endtab %}
 {% endtabs %}
 
+For a more detailed documentation of Brigadier, and it's API you can check out following resources:
+- [Creating Commands | Fabric Docs](https://docs.fabricmc.net/develop/commands/basics)
+- [Readme | Brigadier Repository](https://github.com/Mojang/Brigadier)

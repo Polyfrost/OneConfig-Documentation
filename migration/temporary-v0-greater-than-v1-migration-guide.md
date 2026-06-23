@@ -5,7 +5,7 @@ OneConfig V1 is now available to all developers, with some conditions:
 * Not everything has been documented just yet...
 * Expect bugs with OneConfig V1 itself.
 
-This is in **NO WAY** a complete guide as of yet. [**PLEASE** contribute to this guide](https://github.com/Polyfrost/OneConfig-Documentation/tree/v1) if you find any discrepancies.&#x20;
+This is in **NO WAY** a complete guide yet. [**PLEASE** contribute to this guide](https://github.com/Polyfrost/OneConfig-Documentation/tree/v1) if you find any discrepancies.&#x20;
 
 Below are screenshots of the new GUI. Yes, these are concept designs, but it's basically been implemented 1:1 and I'm way too lazy to take actual screenshots lol
 
@@ -56,7 +56,7 @@ You should be able to do a find and replace with `import <old package name>` . G
 
 ```
 cc.polyfrost -> org.polyfrost
-cc.polyfrost.libs.universal -> replaced by OmniCore
+cc.polyfrost.libs.universal -> removed
 cc.polyfrost.oneconfig.events -> org.polyfrost.oneconfig.api.event.v1.events
 cc.polyfrost.oneconfig.platform -> org.polyfrost.oneconfig.api.platform.v1
 cc.polyfrost.oneconfig.utils -> org.polyfrost.oneconfig.utils.v1

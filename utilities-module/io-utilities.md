@@ -20,7 +20,7 @@ The default implementation of `Clipboard` uses the natives provided by Copycat. 
 String clipboardString = clipboard.getString();
 if (clipboardString == null) {
     // If the user does not have anything copied, or the copied content
-    // is not a string (if, f.ex, it's an image), then the `getString`
+    // is not a string (e.g. it's an image), then the `getString`
     // method returns null.
     return;
 }
@@ -32,16 +32,13 @@ clipboard.setString(newClipboardString); // Copies our string to the user's clip
 
 {% tab title="Kotlin" %}
 ```kotlin
-val clipboardString = clipboard.getString()
-if (clipboardString == null) {
-    // If the user does not have anything copied, or the copied content
-    // is not a string (if, f.ex, it's an image), then the `getString`
-    // method returns null.
-    return
-}
+// If the user does not have anything copied, or the copied content
+// is not a string (e.g. it's an image), then the `getString`
+// method returns null.
+val clipboardString = clipboard.string ?: return
 
 val newClipboardString = "Hello, OneConfig!"
-clipboard.setString(newClipboardString) // Copies our string to the user's clipboard
+clipboard.string = newClipboardString // Copies our string to the user's clipboard
 ```
 {% endtab %}
 {% endtabs %}
@@ -49,33 +46,31 @@ clipboard.setString(newClipboardString) // Copies our string to the user's clipb
 ### Copying and getting images
 
 {% tabs %}
-{% tab title="Java" %}
+{% tab title="Java" %} 
 ```java
 ClipboardImage clipboardImage = clipboard.getImage();
-if (clipboardString == null) {
+if (clipboardImage == null) {
     // If the user does not have anything copied, or the copied content
-    // is not a string (if, f.ex, it's an image), then the `getString`
-    // method returns null.
+    // is not an image (e.g. it's a string), then the `getImage` method returns null.
     return;
 }
 
 ClipboardImage newClipboardImage = null; // Obtain your image somehow...
-clipboard.setImage(newClipboardImage); // Copies our string to the user's clipboard
+clipboard.setImage(newClipboardImage); // Copies our image to the user's clipboard
 ```
 {% endtab %}
 
 {% tab title="Kotlin" %}
-```
-String clipboardString = clipboard.getString();
+```kotlin
+// If the user does not have anything copied, or the copied content
+// is not an image (e.g. it's a string), then the `getImage` method returns null.
+val clipboardImage: ClipboardImage = clipboard.image ?: return
 if (clipboardString == null) {
-    // If the user does not have anything copied, or the copied content
-    // is not a string (if, f.ex, it's an image), then the `getString`
-    // method returns null.
-    return;
+    return
 }
 
-String newClipboardString = "Hello, OneConfig!";
-clipboard.setString(newClipboardString); // Copies our string to the user's clipboard
+val newClipboardImage: ClipboardImage = TODO("Replace with image")
+clipboard.image = newClipboardImage // Copies our image to the user's clipboard
 ```
 {% endtab %}
 {% endtabs %}
@@ -110,13 +105,13 @@ val ourImage = ImageIO.read("/path/to/your/image")
 val ourClipboardImage: ClipboardImage = BufferedClipboardImage.toClipboardImage(ourImage)
 
 // Now, we can finally copy it.
-val clipboard = Clipboard.getInstance()
-clipboard.setImage(ourClipboardImage)
+val clipboard = Clipboard.instance
+clipboard.image = ourClipboardImage
 ```
 {% endtab %}
 {% endtabs %}
 
-This works vice-versa too!
+This works vice versa too!
 
 {% tabs %}
 {% tab title="Java" %}
@@ -131,8 +126,8 @@ BufferedImage image = BufferedClipboardImage.toBufferedImage(clipboardImage);
 
 {% tab title="Kotlin" %}
 ```kotlin
-val clipboard = Clipboard.getInstance()
-val clipboardImage = clipboard.getImage()
+val clipboard = Clipboard.instance
+val clipboardImage = clipboard.image
 
 // Now, we just need to convert it to a BufferedImage
 val image = BufferedClipboardImage.toBufferedImage(clipboardImage)

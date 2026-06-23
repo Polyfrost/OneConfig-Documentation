@@ -1,6 +1,6 @@
 # Callback Events
 
-Getting started with OneConfig's callback-based events system is familiar, easy to learn and fast. If you've worked with FabricMC or QuiltMC before, you'll already be familiar with how these function.
+Getting started with OneConfig's callback-based event system shouldn't be difficult, it's easy to learn and fast. If you've worked with FabricMC or QuiltMC before, you'll already be familiar with how these function.
 
 ## Registering a listener & listening for events
 
@@ -18,7 +18,7 @@ public void setupEvents() {
 {% tab title="Kotlin" %}
 ```kotlin
 fun setupEvents() {
-    EventManager.register(TickEvent.Start::class.java) { event ->
+    EventManager.register(TickEvent.Start::class) { event ->
         println("Tick tick tick!")
     }
 }
@@ -26,7 +26,7 @@ fun setupEvents() {
 {% endtab %}
 {% endtabs %}
 
-And that's it! Now, from this example, you'll be listening to the `TickEvent.Start` event, and every time a new game tick starts, it will print `"Tick tick tick!"` so long as our `setupEvents` method/function is executed at least once in it's lifetime.
+And that's it! Now, from this example, you'll be listening to `TickEvent.Start`, and every time a new game tick starts, it will print `"Tick tick tick!"` so long as our `setupEvents` method/function is executed at least once in the games' lifetime.
 
 ## Kotlin DSL
 

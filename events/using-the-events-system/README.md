@@ -5,7 +5,7 @@ OneConfig has it's own custom event system, which can either be callback- or sub
 If you have used the [Fabric API](https://modrinth.com/mod/fabric-api/), you are likely more familiar with **callback-based events**.\
 If you have worked with [MinecraftForge](https://files.minecraftforge.net/net/minecraftforge/forge/) or [NeoForge](https://neoforged.net/), you are likely more familiar with **subscriber-based events**.
 
-It is preferred to use callback-based events for code quality, maintainability and speed.
+Due to how the systems handle event dispatches internally they are practically equivalent in speed. The subscriber based system takes a bit longer due to it needing to scan for methods, however you should use whichever style you are more comfortable with.
 
 {% content-ref url="callback-events.md" %}
 [callback-events.md](callback-events.md)

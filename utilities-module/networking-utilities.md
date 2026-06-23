@@ -1,11 +1,14 @@
 # Networking Utilities
 
-There is a small set of basic, yet useful, networking utilities for things such as obtaining a string from a URL, downloading a file, etc.
+There is a small set of basic, yet useful, networking utilities for things such as obtaining text from a URL, downloading a file, etc.
 
 ## Getting a string response from a URL
 
+Requesting a simple string from a website is as simple as passing in the url, and some extra values to alter the specifics of the connection.
+In case any errors are encountered, such as an invalid domain name or similar, the method returns null rather than throwing an exception.
+
 {% tabs %}
-{% tab title="Java" %}
+{% tab title="Java" %} 
 ```java
 String url = "https://example.com";
 String userAgent = "Example/1.0.0";
@@ -24,15 +27,15 @@ val userAgent = "Example/1.0.0"
 val timeout = 30_000 // 30 seconds
 val useCaches = true // If we request from this same URL multiple times, the response will be cached
 
-val response = NetworkUtils.getString(url, userAgent, timeout, useCaches)
+val response = NetworkUtils.getString(url = url, userAgent, timeout, useCaches)
 println("Response from example.com:\n$response")
 ```
 {% endtab %}
 {% endtabs %}
 
-It is recommended to use the name of your mod as the first half of your user agent, and the version as the second half.
+It is recommended to include both the name of your mod and the mod version in your user agent.
 
-Otherwise, you can simply call `getString` using a URL to use the default OneConfig user agent, a timeout of 5000 milliseconds (5 seconds) and no caching.
+Otherwise, you can simply call `getString` using a URL to use the default OneConfig user agent, a request timeout of 5000 milliseconds (5 seconds) and no caching.
 
 {% tabs %}
 {% tab title="Java" %}
@@ -62,6 +65,11 @@ println("Response from example.com:\n$response")
 String url = "https://example.com";
 JsonElement json = JsonUtils.parseFromUrl(url);
 
+if (json == null) {
+    // The request failed, and therefore we got a null return value.
+    return;
+}
+
 // You can use your JsonElement as you please
 ```
 {% endtab %}
@@ -69,7 +77,7 @@ JsonElement json = JsonUtils.parseFromUrl(url);
 {% tab title="Kotlin" %}
 ```kotlin
 val url = "https://example.com"
-val json: JsonElement = JsonUtils.parseFromUrl(url)
+val json: JsonElement? = JsonUtils.parseFromUrl(url) ?: return // The request failed, and therefore we got a null return value.
 
 // You can use your JsonElement as you please
 ```
@@ -78,6 +86,8 @@ val json: JsonElement = JsonUtils.parseFromUrl(url)
 
 ## Downloading files
 
+Downloading files to the local file system is just as straight forward as requesting a string or a json element.
+However, instead of returning the content, a boolean value is returned, with true indicating success, and false an error.
 {% tabs %}
 {% tab title="Java" %}
 ```java
@@ -95,7 +105,7 @@ System.out.println("File download status: " + result);
 {% tab title="Kotlin" %}
 ```kotlin
 val url = "https://example.com"
-val path = Paths.get("/path/to/your/file")
+val path = Path("/path/to/your/file")
 val userAgent = "Example/1.0.0"
 val timeout = 30_000 // 30 seconds
 val useCaches = true // If we request from this same URL multiple times, the response will be cached
@@ -124,7 +134,7 @@ System.out.println("File download status: " + result);
 {% tab title="Kotlin" %}
 ```kotlin
 val url = "https://example.com"
-val path = Paths.get("/path/to/your/file")
+val path = Path("/path/to/your/file")
 
 val result = NetworkUtils.downloadFile(url, path)
 println("File download status: $result")

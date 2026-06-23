@@ -11,7 +11,7 @@ In order for your subscriber methods to execute when an event is dispatched, you
 ```java
 public class ExampleListener {
     // This should be called somewhere - Like when your mod is first initialized
-    public void run() {
+    public void register() {
         EventManager.INSTANCE.register(this);
     }
 }
@@ -22,7 +22,7 @@ public class ExampleListener {
 ```kotlin
 object ExampleListener {
     // This should be called somewhere - Like when your mod is first initialized
-    fun run() {
+    fun register() {
         EventManager.INSTANCE.register(this)
     }
 }
@@ -32,14 +32,14 @@ object ExampleListener {
 
 ## Listening for events
 
-Now that your instance is registered as an event listener, you can define your subscriber methods for the events which you want to listen for dispatches of. This can be done by defining those events as parameters for a method/function then annotating that same method/function with `@Subscribe`.
+Now that your instance is registered as an event listener, you can define your subscriber methods for the events you want to listen for. This can be done by defining those events as parameters for a method/function then annotating that same method/function with `@Subscribe`.
 
 {% tabs %}
 {% tab title="Java" %}
 ```java
 public class ExampleListener {
     // This should be called somewhere - Like when your mod is first initialized
-    public void run() {
+    public void register() {
         EventManager.INSTANCE.register(this);
     }
     
@@ -56,13 +56,13 @@ public class ExampleListener {
 ```kotlin
 object ExampleListener {
     // This should be called somewhere - Like when your mod is first initialized
-    fun run() {
+    fun register() {
         EventManager.INSTANCE.register(this)
     }
     
     // This method is called every tick, as the TickEvent is dispatched every game tick
     @Subscribe
-    fun onTick(event: TickEvent) {
+    fun onTick(event: TickEvent.Start) {
         println("Tick tick tick!")
     }
 }
@@ -70,4 +70,4 @@ object ExampleListener {
 {% endtab %}
 {% endtabs %}
 
-And there you have it! This instance of our `ExampleListener` now receives all dispatched instances of `TickEvent.Start` as long as our `run` method/function is executed at least once in it's lifetime.
+And there you have it! This instance of our `ExampleListener` now receives all dispatched instances of `TickEvent.Start` as long as our `register` method/function is executed at least once in the games' lifetime.

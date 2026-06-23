@@ -1,5 +1,7 @@
 # Multithreading
 
+OneConfig comes with a builtin util to make async executing, and delayed async running more convenient.
+
 ## Submitting actions to run in multiple threads
 
 {% tabs %}
@@ -14,12 +16,21 @@ Multithreading.submit(action);
 {% endtab %}
 
 {% tab title="Kotlin" %}
+
+In kotlin you can either use the Java API
 ```kotlin
 val action = Runnable {
     println("Hello! I'm in another thread!")
 }
 
 Multithreading.submit(action)
+```
+Or by using the kotlin helper function
+
+```kotlin
+submit {
+    println("Hello! I'm in another thread!")
+}
 ```
 {% endtab %}
 {% endtabs %}
@@ -28,21 +39,36 @@ Multithreading.submit(action)
 
 {% tabs %}
 {% tab title="Java" %}
-<pre class="language-java"><code class="lang-java"><strong>Runnable action = () -> {
-</strong>    System.out.println("Hello! I'm in another thread and was run after 5 seconds!");
+```java
+Runnable action = () -> {
+    System.out.println("Hello! I'm in another thread and ran after 5 seconds!");
 };
-<strong>
-</strong><strong>Mulithreading.schedule(action, 5, TimeUnit.SECONDS);
-</strong></code></pre>
+
+Mulithreading.schedule(action, 5, TimeUnit.SECONDS);
+```
 {% endtab %}
 
 {% tab title="Kotlin" %}
+
+In kotlin you can either use the Java API
 ```kotlin
 val action = Runnable {
-    println("Hello! I'm in another thread and was run after 5 seconds!")
+    println("Hello! I'm in another thread and ran after 5 seconds!")
 }
 
 Mulithreading.schedule(action, 5, TimeUnit.SECONDS)
+```
+
+Or using one of the kotlin helper function
+
+```kotlin
+schedule(5, TimeUnit.SECONDS) {
+    TODO("<...>")
+}
+
+schedule(5.seconds) {
+    TODO("<...>")
+}
 ```
 {% endtab %}
 {% endtabs %}
