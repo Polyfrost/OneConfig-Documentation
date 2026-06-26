@@ -9,10 +9,14 @@ It's preferable to make your button callback methods to private so that they can
 ```java
 @Button(
     title = "My Button",
-    description = "This is my button", // Recommended, default = ""
-    icon = "/my_button.svg", // Optional, default = ""
-    category = "Buttons", // Recommended, default = "General"
-    subcategory = "General", // Recommended, default = "General"
+    titleKey = "", // Sets the options tile translation key, default = ""
+    description = "This is my button", // Sets the options description, default = ""
+    descriptionKey = "", // Sets the options description translation key, default = ""
+    icon = "/my_button.svg", // Sets the icon used for the option, default = ""
+    category = "Buttons", // Sets the options category, default = "General"
+    categoryKey = "", // Sets the categories translation key, default = ""
+    subcategory = "General", // Sets the options subcategory, default = "General"
+    subcategoryKey = "", // Sets the options subcategory translation key, default = ""
     text = "Say hi!" // Recommended, default = "Click"
 )
 private void sayHi() {
@@ -22,17 +26,22 @@ private void sayHi() {
 {% endtab %}
 
 {% tab title="Kotlin" %}
-<pre class="language-kotlin"><code class="lang-kotlin">@Button(
+```kotlin
+@Button(
     title = "My Button",
-    description = "This is my button", // Recommended, default = ""
-    icon = "/my_button.svg", // Optional, default = ""
-    category = "Buttons", // Recommended, default = "General"
-    subcategory = "General", // Recommended, default = "General"
-    text = "Say hi!" // Recommended, default = "Click"
+    titleKey = "", // Sets the options tile translation key, default = ""
+    text = "Say hi!", // Recommended, default = "Click"
+    description = "This is my button", // Sets the options description, default = ""
+    descriptionKey = "", // Sets the options description translation key, default = ""
+    icon = "/my_button.svg", // Sets the icon used for the option, default = ""
+    category = "Buttons", // Sets the options category, default = "General"
+    categoryKey = "", // Sets the categories translation key, default = ""
+    subcategory = "General", // Sets the options subcategory, default = "General"
+    subcategoryKey = "", // Sets the options subcategory translation key, default = ""
 )
-<strong>private fun sayHi() {
-</strong>    println("Hello, OneConfig!");
+fun sayHi() {
+    println("Hello, OneConfig!")
 }
-</code></pre>
+```
 {% endtab %}
 {% endtabs %}

@@ -7,15 +7,14 @@
 ```java
 @Keybind(
     title = "My Keybind",
-    titleKey = null, // Sets the options tile translation key, default = ""
-    description = null, // Sets the options description, default = ""
-    descriptionKey = null, // Sets the options description translation key, default = ""
-    icon = null, // Sets the icon used for the option, default = ""
-    multiline = false, // Allows multiline text, default = false
-    category = "General", // Sets the options category, default = "General"
-    categoryKey = null, // Sets the categories translation key, default = ""
-    subcategory = "General", // Sets the options subcategory, default = "General"
-    subcategoryKey = null // Sets the options subcategory translation key, default = ""
+    titleKey = "", // Sets the options tile translation key, default = ""
+    description = "This is my info block", // Recommended, default = ""
+    descriptionKey = "", // Sets the options description translation key, default = ""
+    icon = "", // Optional, default = "". Please refer to Notifications.Type to see default types
+    category = "Decorations", // Recommended, default = "General"
+    categoryKey = "", // Sets the categories translation key, default = ""
+    subcategory = "General", // Recommended, default = "General"
+    subcategoryKey = "" // Sets the options subcategory translation key, default = ""
 )
 public static KeyBinder.Bind myKeybind = KeybindHelper.builder().key(UKeyboard.KEY_NONE).action(() -> {
     System.out.println("Hello, OneConfig!");
@@ -34,7 +33,6 @@ val myKeybind: KeyBinder.Bind by keybind(
     description = null, // Sets the options description, default = null
     descriptionKey = null, // Sets the options description translation key, default = null
     icon = null, // Sets the icon used for the option, default = null
-    multiline = false, // Allows multiline text, default = false
     category = "General", // Sets the options category, default = "General"
     categoryKey = null, // Sets the categories translation key, default = null
     subcategory = "General", // Sets the options subcategory, default = "General"

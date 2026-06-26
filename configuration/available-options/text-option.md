@@ -10,16 +10,16 @@
 @Text(
     title = "My Text",
     def = "", // Sets option's default value. Recommended, default = ""
-    titleKey = null, // Sets the options tile translation key, default = ""
-    description = null, // Sets the options description, default = ""
-    descriptionKey = null, // Sets the options description translation key, default = ""
-    icon = null, // Sets the icon used for the option, default = ""
+    titleKey = "", // Sets the options tile translation key, default = ""
+    description = "", // Sets the options description, default = ""
+    descriptionKey = "", // Sets the options description translation key, default = ""
+    icon = "", // Sets the icon used for the option, default = ""
     multiline = false, // Allows multiline text, default = false
     category = "General", // Sets the options category, default = "General"
-    categoryKey = null, // Sets the categories translation key, default = ""
+    categoryKey = "", // Sets the categories translation key, default = ""
     subcategory = "General", // Sets the options subcategory, default = "General"
-    subcategoryKey = null, // Sets the options subcategory translation key, default = ""
-    placeholder = null, // Sets the options placeholder, default = ""
+    subcategoryKey = "", // Sets the options subcategory translation key, default = ""
+    placeholder = "", // Sets the options placeholder, default = ""
     placeholderKey = "polyui.textinput.placeholder" // Sets the options placeholder translation key, default = "polyui.textinput.placeholder"
 )
 public static String myText = "";
