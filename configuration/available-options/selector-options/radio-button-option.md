@@ -13,25 +13,38 @@
 ```java
 @RadioButton(
     title = "My Radio",
-    description = "This is my radio", // Recommended, default = ""
-    icon = "/my_radio.svg", // Optional, default = ""
-    category = "Radio Buttons", // Recommended, default = "General"
-    subcategory = "General", // Recommended, default = "General"
-    options = { "HELLO", "WORLD", "ONECONFIG" } // Recommended, default = {}
+    titleKey = "", // Sets the options tile translation key, default = ""
+    description = "This is my radio", // Sets the options description, default = ""
+    descriptionKey = "", // Sets the options description translation key, default = ""
+    icon = "/my_radio.svg", // Sets the icon used for the option, default = ""
+    category = "Radio Buttons", // Sets the options category, default = "General"
+    categoryKey = "", // Sets the categories translation key, default = ""
+    subcategory = "General", // Sets the options subcategory, default = "General"
+    subcategoryKey = "", // Sets the options subcategory translation key, default = ""
+    options = { "HELLO", "WORLD", "ONECONFIG" }, // Recommended, default = {}
+    optionsKey = { } // Allows for translating entries, default = {}
 )
 public static int myRadio = 0; // 0 = "HELLO"
 ```
 {% endtab %}
 
 {% tab title="Kotlin" %}
+
+TODO: update to new kotlin api, requires implementation first.
+
 ```kotlin
 @RadioButton(
     title = "My Radio",
-    description = "This is my radio", // Recommended, default = ""
-    icon = "/my_radio.svg", // Optional, default = ""
-    category = "Radio Buttons", // Recommended, default = "General"
-    subcategory = "General", // Recommended, default = "General"
-    options = ["HELLO", "WORLD", "ONECONFIG"] // Recommended, default = []
+    titleKey = "", // Sets the options tile translation key, default = ""
+    description = "This is my radio", // Sets the options description, default = ""
+    descriptionKey = "", // Sets the options description translation key, default = ""
+    icon = "/my_radio.svg", // Sets the icon used for the option, default = ""
+    category = "Radio Buttons", // Sets the options category, default = "General"
+    categoryKey = "", // Sets the categories translation key, default = ""
+    subcategory = "General", // Sets the options subcategory, default = "General"
+    subcategoryKey = "", // Sets the options subcategory translation key, default = ""
+    options = [ "HELLO", "WORLD", "ONECONFIG" ], // Recommended, default = {}
+    optionsKey = [ ] // Allows for translating entries, default = {}
 )
 var myRadio = 0 // 0 = "HELLO"
 ```
@@ -51,11 +64,16 @@ public enum MyRadioOptions {
 
 @RadioButton(
     title = "My Radio",
-    description = "This is my radio", // Recommended, default = ""
-    icon = "/my_radio.svg", // Optional, default = ""
-    category = "Radio Buttons", // Recommended, default = "General"
-    subcategory = "General", // Recommended, default = "General"
-    // this field cannot be present when using an enum: options = { "HELLO", "WORLD", "ONECONFIG" }
+    titleKey = "", // Sets the options tile translation key, default = ""
+    description = "This is my radio", // Sets the options description, default = ""
+    descriptionKey = "", // Sets the options description translation key, default = ""
+    icon = "/my_radio.svg", // Sets the icon used for the option, default = ""
+    category = "Radio Buttons", // Sets the options category, default = "General"
+    categoryKey = "", // Sets the categories translation key, default = ""
+    subcategory = "General", // Sets the options subcategory, default = "General"
+    subcategoryKey = "", // Sets the options subcategory translation key, default = ""
+    // this field cannot be present when using an enum: options = { "HELLO", "WORLD", "ONECONFIG" }, // Recommended, default = {}
+    optionsKey = { } // Allows for translating entries, default = {}
 )
 public static MyRadioOptions myRadio = MyRadioOptions.HELLO;
 ```
@@ -71,11 +89,16 @@ public enum class MyRadioOptions {
 
 @RadioButton(
     title = "My Radio",
-    description = "This is my radio", // Recommended, default = ""
-    icon = "/my_radio.svg", // Optional, default = ""
-    category = "Radio Buttons", // Recommended, default = "General"
-    subcategory = "General", // Recommended, default = "General"
-    // this field cannot be present when using an enum: options = ["HELLO", "WORLD", "ONECONFIG"]
+    titleKey = "", // Sets the options tile translation key, default = ""
+    description = "This is my radio", // Sets the options description, default = ""
+    descriptionKey = "", // Sets the options description translation key, default = ""
+    icon = "/my_radio.svg", // Sets the icon used for the option, default = ""
+    category = "Radio Buttons", // Sets the options category, default = "General"
+    categoryKey = "", // Sets the categories translation key, default = ""
+    subcategory = "General", // Sets the options subcategory, default = "General"
+    subcategoryKey = "", // Sets the options subcategory translation key, default = ""
+    // this field cannot be present when using an enum: options = [ "HELLO", "WORLD", "ONECONFIG" ], // Recommended, default = {}
+    optionsKey = [ ] // Allows for translating entries, default = {}
 )
 var myRadio = MyRadioOptions.HELLO
 ```

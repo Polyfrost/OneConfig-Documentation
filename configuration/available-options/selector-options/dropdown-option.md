@@ -15,11 +15,16 @@
 ```java
 @Dropdown(
     title = "My Dropdown",
-    description = "This is my dropdown", // Recommended, default = ""
-    icon = "/my_dropdown.svg", // Optional, default = ""
-    category = "Dropdowns", // Recommended, default = "General"
-    subcategory = "General" // Recommended, default = "General"
-    options = { "HELLO", "WORLD", "ONECONFIG" } // Recommended, default = {}
+    titleKey = "", // Sets the options tile translation key, default = ""
+    description = "This is my dropdown", // Sets the options description, default = ""
+    descriptionKey = "", // Sets the options description translation key, default = ""
+    icon = "/my_dropdown.svg", // Sets the icon used for the option, default = ""
+    category = "Dropdowns", // Sets the options category, default = "General"
+    categoryKey = "", // Sets the categories translation key, default = ""
+    subcategory = "General", // Sets the options subcategory, default = "General"
+    subcategoryKey = "", // Sets the options subcategory translation key, default = ""
+    options = { "HELLO", "WORLD", "ONECONFIG" }, // Recommended, default = {}
+    optionsKey = { } // Allows for translating entries, default = {}
 )
 public static int myDropdown = 0; // 0 = "HELLO"
 ```
@@ -29,11 +34,16 @@ public static int myDropdown = 0; // 0 = "HELLO"
 ```kotlin
 @Dropdown(
     title = "My Dropdown",
-    description = "This is my dropdown", // Recommended, default = ""
-    icon = "/my_dropdown.svg", // Optional, default = ""
-    category = "Dropdowns", // Recommended, default = "General"
-    subcategory = "General" // Recommended, default = "General"
-    options = ["HELLO", "WORLD", "ONECONFIG"] // Recommended, default = []
+    titleKey = "", // Sets the options tile translation key, default = ""
+    description = "This is my dropdown", // Sets the options description, default = ""
+    descriptionKey = "", // Sets the options description translation key, default = ""
+    icon = "/my_dropdown.svg", // Sets the icon used for the option, default = ""
+    category = "Dropdowns", // Sets the options category, default = "General"
+    categoryKey = "", // Sets the categories translation key, default = ""
+    subcategory = "General", // Sets the options subcategory, default = "General"
+    subcategoryKey = "", // Sets the options subcategory translation key, default = ""
+    options = [ "HELLO", "WORLD", "ONECONFIG" ], // Recommended, default = {}
+    optionsKey = [ ] // Allows for translating entries, default = {}
 )
 var myDropdown = 0 // 0 = "HELLO"
 ```
@@ -53,11 +63,16 @@ public enum MyDropdownOptions {
 
 @Dropdown(
     title = "My Dropdown",
-    description = "This is my dropdown", // Recommended, default = ""
-    icon = "/my_dropdown.svg", // Optional, default = ""
-    category = "Dropdowns", // Recommended, default = "General"
-    subcategory = "General" // Recommended, default = "General"
-    // We can't use the options field when using an enum.
+    titleKey = "", // Sets the options tile translation key, default = ""
+    description = "This is my dropdown", // Sets the options description, default = ""
+    descriptionKey = "", // Sets the options description translation key, default = ""
+    icon = "/my_dropdown.svg", // Sets the icon used for the option, default = ""
+    category = "Dropdowns", // Sets the options category, default = "General"
+    categoryKey = "", // Sets the categories translation key, default = ""
+    subcategory = "General", // Sets the options subcategory, default = "General"
+    subcategoryKey = "", // Sets the options subcategory translation key, default = ""
+    // this field cannot be present when using an enum: options = { "HELLO", "WORLD", "ONECONFIG" }, // Recommended, default = {}
+    optionsKey = { } // Allows for translating entries, default = {}
 )
 public static MyDropdownOptions myDropdown = MyDropdownOptions.HELLO;
 ```
@@ -73,11 +88,16 @@ enum class MyDropdownOptions {
 
 @Dropdown(
     title = "My Dropdown",
-    description = "This is my dropdown", // Recommended, default = ""
-    icon = "/my_dropdown.svg", // Optional, default = ""
-    category = "Dropdowns", // Recommended, default = "General"
-    subcategory = "General" // Recommended, default = "General"
-    // We can't use the options field when using an enum.
+    titleKey = "", // Sets the options tile translation key, default = ""
+    description = "This is my dropdown", // Sets the options description, default = ""
+    descriptionKey = "", // Sets the options description translation key, default = ""
+    icon = "/my_dropdown.svg", // Sets the icon used for the option, default = ""
+    category = "Dropdowns", // Sets the options category, default = "General"
+    categoryKey = "", // Sets the categories translation key, default = ""
+    subcategory = "General", // Sets the options subcategory, default = "General"
+    subcategoryKey = "", // Sets the options subcategory translation key, default = ""
+    // this field cannot be present when using an enum: options = [ "HELLO", "WORLD", "ONECONFIG" ], // Recommended, default = {}
+    optionsKey = [ ] // Allows for translating entries, default = {}
 )
 var myDropdown = MyDropdownOptions.HELLO
 ```
