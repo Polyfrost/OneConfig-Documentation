@@ -15,10 +15,8 @@ public MyConfig() {
 
 {% tab title="Kotlin" %}
 ```kotlin
-init {
-    addCallback("myOptionName") {
-        println("myOptionName changed!");
-    }
+val option by observable(switch(<...>)) {
+    println("myOptionName changed!")
 }
 ```
 {% endtab %}
@@ -39,10 +37,8 @@ public MyConfig() {
 
 {% tab title="Kotlin" %}
 ```kotlin
-init {
-    addCallback<Boolean>("myOptionName") { value ->
-        println("myOptionName value: $value")
-    }
+val option by observable(switch(<...>)) {
+    println("myOptionName value: $it")
 }
 ```
 {% endtab %}

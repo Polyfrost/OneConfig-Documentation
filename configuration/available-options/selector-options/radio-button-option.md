@@ -33,20 +33,21 @@ public static int myRadio = 0; // 0 = "HELLO"
 TODO: update to new kotlin api, requires implementation first.
 
 ```kotlin
-@RadioButton(
-    title = "My Radio",
-    titleKey = "", // Sets the options tile translation key, default = ""
-    description = "This is my radio", // Sets the options description, default = ""
-    descriptionKey = "", // Sets the options description translation key, default = ""
-    icon = "/my_radio.svg", // Sets the icon used for the option, default = ""
+var myRadio: String by radiobutton(
+    name = "My Radio",
+    defaultOption = "HELLO",
+    options = arrayOf("HELLO", "WORLD", "ONECONFIG"),
+    nameKey = null, // Sets the options name translation key, default = null
+    description = "This is my radio", // Sets the options description, default = null
+    descriptionKey = null, // Sets the options description translation key, default = null
+    icon = "/my_radio.svg", // Sets the icon used for the option, default = null
     category = "Radio Buttons", // Sets the options category, default = "General"
-    categoryKey = "", // Sets the categories translation key, default = ""
+    categoryKey = null, // Sets the categories translation key, default = null
     subcategory = "General", // Sets the options subcategory, default = "General"
-    subcategoryKey = "", // Sets the options subcategory translation key, default = ""
-    options = [ "HELLO", "WORLD", "ONECONFIG" ], // Recommended, default = {}
-    optionsKey = [ ] // Allows for translating entries, default = {}
+    subcategoryKey = null, // Sets the options subcategory translation key, default = null
+    optionKeys = arrayOf(""), // Sets the options translation keys, order same as options, default = arrayOf()
+    stringTransformer = { it.lowercase() }, // Sets how to get the name for the option, default = { it.toString() }
 )
-var myRadio = 0 // 0 = "HELLO"
 ```
 {% endtab %}
 {% endtabs %}
@@ -81,26 +82,27 @@ public static MyRadioOptions myRadio = MyRadioOptions.HELLO;
 
 {% tab title="Kotlin" %}
 ```kotlin
-public enum class MyRadioOptions {
-    HELLO,
-    WORLD,
-    ONECONFIG
+enum class MyRadioOptions(val displayName: String) {
+    HELLO("hi"),
+    WORLD("world"),
+    ONECONFIG("OneConfig!"),
 }
 
-@RadioButton(
-    title = "My Radio",
-    titleKey = "", // Sets the options tile translation key, default = ""
-    description = "This is my radio", // Sets the options description, default = ""
-    descriptionKey = "", // Sets the options description translation key, default = ""
-    icon = "/my_radio.svg", // Sets the icon used for the option, default = ""
+var myRadio by radiobutton(
+    name = "My Radio",
+    defaultOption = MyRadioOptions.HELLO,
+    options = MyRadioOptions.entries.toTypedArray(),
+    nameKey = null, // Sets the options name translation key, default = null
+    description = "This is my radio", // Sets the options description, default = null
+    descriptionKey = null, // Sets the options description translation key, default = null
+    icon = "/my_radio.svg", // Sets the icon used for the option, default = null
     category = "Radio Buttons", // Sets the options category, default = "General"
-    categoryKey = "", // Sets the categories translation key, default = ""
+    categoryKey = null, // Sets the categories translation key, default = null
     subcategory = "General", // Sets the options subcategory, default = "General"
-    subcategoryKey = "", // Sets the options subcategory translation key, default = ""
-    // this field cannot be present when using an enum: options = [ "HELLO", "WORLD", "ONECONFIG" ], // Recommended, default = {}
-    optionsKey = [ ] // Allows for translating entries, default = {}
+    subcategoryKey = null, // Sets the options subcategory translation key, default = null
+    optionKeys = arrayOf(""), // Sets the options translation keys, order same as options, default = arrayOf()
+    stringTransformer = MyRadioOptions::displayName, // Sets how to get the name for the option, default = { it.toString() }
 )
-var myRadio = MyRadioOptions.HELLO
 ```
 {% endtab %}
 {% endtabs %}
