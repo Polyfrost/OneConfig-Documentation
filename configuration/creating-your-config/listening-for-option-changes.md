@@ -15,9 +15,11 @@ public MyConfig() {
 
 {% tab title="Kotlin" %}
 ```kotlin
-val option by observable(switch(<...>)) {
+val myOptionName by observable(switch(<...>)) {
     println("myOptionName changed!")
 }
+
+val myOptionName by switch(<...>).onChange { println("myOptionName changed!") }
 ```
 {% endtab %}
 {% endtabs %}
@@ -37,9 +39,11 @@ public MyConfig() {
 
 {% tab title="Kotlin" %}
 ```kotlin
-val option by observable(switch(<...>)) {
+val myOptionName by observable(switch(<...>)) {
     println("myOptionName value: $it")
 }
+
+val myOptionName by switch(<...>).onChange { println("myOptionName value: $it") }
 ```
 {% endtab %}
 {% endtabs %}
