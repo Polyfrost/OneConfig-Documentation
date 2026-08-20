@@ -102,14 +102,14 @@ Using arguments is simple too! You just add them as normal arguments to a method
         }
         
         // basic example
-        @Subcommand(aliases = {"minus"})
+        @SubCommand(aliases = {"minus"})
         private void subtract(int something, int somethingelse) {
             UChat.chat(something - somethingelse);
         }
         
         // descriptions! (optional, but recommended)
         @SubCommand(description = "Add two numbers.")
-        private void add(@Descripton("First number") int a, @Description("Second number") int b) {
+        private void add(@Description("First number") int a, @Description("Second number") int b) {
             // woah, whats this @Description?
             // @Description allows you to add information about the param to the user in the help message.
             // so, with these descriptors, if a person called /examplemod help:
@@ -124,13 +124,13 @@ Using arguments is simple too! You just add them as normal arguments to a method
         
         // autocomplete!
         @SubCommand()
-        private void autocompleteDemo(@Descripton(autocompletesTo = {"PLAYER"} String s) {
-            System.out.println(s);
+        private void autocompleteDemo(GameProfile player) {
+            System.out.println(player);
             // this command autocompletes to player names in the server right now (cool)
         }
         
         @SubCommand()
-        private void anotherDemo(@Descripton(autocompletesTo = {"maybe", "call", "me"} String s) {
+        private void anotherDemo(@Description(autoCompletesTo = {"maybe", "call", "me"}) String s) {
             System.out.println(s);
             // this command autocompletes to the list of args given above. ^
             // booleans also have automatic autocompletion for their args :)
